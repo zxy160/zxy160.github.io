@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>音频接口</title>
+      <link href="/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/"/>
+      <url>/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="三色音频接口"><a href="#三色音频接口" class="headerlink" title="三色音频接口"></a>三色音频接口</h1><p>Line Out：一个插耳机（或音箱）是绿色的；</p><p>MIC：一个插话筒（麦克风）是红色的；</p><p>Line In：一个线路输入（一般用不着）是蓝色的。 比如想把以前磁带或收音机里的声音转录到电脑里，就可以用这个孔</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 硬件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网口速率灯</title>
+      <link href="/2024/11/27/%E7%BD%91%E5%8F%A3%E9%80%9F%E7%8E%87%E7%81%AF/"/>
+      <url>/2024/11/27/%E7%BD%91%E5%8F%A3%E9%80%9F%E7%8E%87%E7%81%AF/</url>
+      
+        <content type="html"><![CDATA[<p>左为状态指示灯，右为速度指示灯</p><p><img src="/images/1.png" alt="图片"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 硬件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客相关</title>
+      <link href="/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
+      <url>/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、写作和发布"><a href="#一、写作和发布" class="headerlink" title="一、写作和发布"></a>一、写作和发布</h1><p>1.1 创建一篇新文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章名称</span><br></pre></td></tr></table></figure><p>1.2 本地启动</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
