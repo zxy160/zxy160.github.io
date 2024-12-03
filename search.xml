@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>COM口</title>
+      <link href="/2024/12/03/COM%E5%8F%A3/"/>
+      <url>/2024/12/03/COM%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-主板上的com口"><a href="#1-主板上的com口" class="headerlink" title="1.主板上的com口"></a>1.主板上的com口</h1><p><img src="/images/3.png" alt="图1"><br><img src="/images/2.png" alt="图2"><br>这是一个 COM 端口的针脚定义图，标注为 COM_A，并显示了 RS232 接口相关的信号。</p><p>各针脚信号含义<br>针脚 1：-NDCDA</p><p>描述：数据载波检测信号 (DCD, Data Carrier Detect)。通常由调制解调器发出，用于通知终端是否检测到载波信号。<br>针脚 2：NSINA</p><p>描述：接收数据 (RXD, Receive Data)。从外部设备接收到的数据信号。<br>针脚 3：NSOUTA</p><p>描述：发送数据 (TXD, Transmit Data)。向外部设备发送的数据信号。<br>针脚 4：-NDTRA</p><p>描述：数据终端准备好 (DTR, Data Terminal Ready)。用于通知对端设备，终端已经准备好通信。<br>针脚 5：接地 (GND)</p><p>描述：信号的地线，作为所有信号的参考点。<br>针脚 6：-NDSRA</p><p>描述：数据集准备好 (DSR, Data Set Ready)。通常由调制解调器发出，用于通知终端设备是否已准备好通信。<br>针脚 7：-NRTSA</p><p>描述：请求发送 (RTS, Request To Send)。通知对端设备，终端设备希望发送数据。<br>针脚 8：-NCTSA</p><p>描述：清除发送 (CTS, Clear To Send)。由对端设备发出，用于通知终端设备是否可以发送数据。<br>针脚 9：-NRIA</p><p>描述：振铃指示 (RI, Ring Indicator)。当外部设备有呼叫时，产生的振铃信号指示。</p><h1 id="2-机箱后的com口"><a href="#2-机箱后的com口" class="headerlink" title="2.机箱后的com口"></a>2.机箱后的com口</h1><p><img src="/images/4.png" alt="图3"><br>按序号说明：<br>1 载波检测(DCD)<br>2 接受数据(RXD)<br>3 发出数据(TXD)<br>4 数据终端准备好(DTR)<br>5 信号地线(SG)<br>6 数据准备好(DSR)<br>7 请求发送(RTS)<br>8 清除发送(CTS)<br>9 振铃指示(RI)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 硬件 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>音频接口</title>
       <link href="/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/"/>
       <url>/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/</url>
