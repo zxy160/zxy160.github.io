@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>BIOS相关Spec</title>
+      <link href="/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/"/>
+      <url>/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/</url>
+      
+        <content type="html"><![CDATA[<h1 id="UFEI-SPEC"><a href="#UFEI-SPEC" class="headerlink" title="UFEI SPEC"></a>UFEI SPEC</h1><p>官网链接：<a href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Specification）</p><h1 id="PI-SPEC"><a href="#PI-SPEC" class="headerlink" title="PI SPEC"></a>PI SPEC</h1><p>官网链接：<a href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Platform Initialization Specification）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> BIOS </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SATA相关</title>
+      <link href="/2024/12/18/SATA%E7%9B%B8%E5%85%B3/"/>
+      <url>/2024/12/18/SATA%E7%9B%B8%E5%85%B3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="硬盘IDE和AHCI模式的区别"><a href="#硬盘IDE和AHCI模式的区别" class="headerlink" title="硬盘IDE和AHCI模式的区别"></a>硬盘IDE和AHCI模式的区别</h1><p>通俗易懂的说法就是，IDE就是ATA模式，是并口传输模式，04年前普及的技术，理论上最大133Mb每秒。<br>AHCI就是SATA模式，串口传输模式，新技术，传输速度快，理论上最大300Mb每秒。</p><h1 id="IdeController驱动"><a href="#IdeController驱动" class="headerlink" title="IdeController驱动"></a>IdeController驱动</h1><p>IdeController.c中</p><h1 id="SataController驱动"><a href="#SataController驱动" class="headerlink" title="SataController驱动"></a>SataController驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Pci&#x2F;SataControllerDxe&#x2F;SataController.c中</p><h1 id="AtaAtapiPassThru驱动"><a href="#AtaAtapiPassThru驱动" class="headerlink" title="AtaAtapiPassThru驱动"></a>AtaAtapiPassThru驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaAtapiPassThru&#x2F;AtaAtapiPassThru.c中</p><h1 id="AtaBus驱动"><a href="#AtaBus驱动" class="headerlink" title="AtaBus驱动"></a>AtaBus驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaBusDxe&#x2F;AtaBus.c中</p><h1 id="ScsiBus-驱动"><a href="#ScsiBus-驱动" class="headerlink" title="ScsiBus 驱动"></a>ScsiBus 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiBusDxe&#x2F;ScsiBus.c</p><h1 id="ScsiDisk-驱动"><a href="#ScsiDisk-驱动" class="headerlink" title="ScsiDisk 驱动"></a>ScsiDisk 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiDiskDxe&#x2F;ScsiDisk.c</p><h1 id="DiskIo-驱动"><a href="#DiskIo-驱动" class="headerlink" title="DiskIo 驱动"></a>DiskIo 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;DiskIoDxe&#x2F;DiskIo.c</p><h1 id="Partition-驱动"><a href="#Partition-驱动" class="headerlink" title="Partition 驱动"></a>Partition 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;PartitionDxe&#x2F;Partition.c</p><h1 id="SIMPLE-FILE驱动"><a href="#SIMPLE-FILE驱动" class="headerlink" title="SIMPLE_FILE驱动"></a>SIMPLE_FILE驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;FvSimpleFileSystemDxe&#x2F;FvSimpleFileSystemEntryPoint.c</p><p>以上协议的关系如下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">+-----------------------------------------+</span><br><span class="line">| 文件系统驱动 (EFI_SIMPLE_FILE_SYSTEM)   |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| Partition 驱动                         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| DiskIo 驱动                            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| **块设备驱动 (EFI_BLOCK_IO_PROTOCOL)**  | &lt;-- AtaBus 驱动/ScsiBus 驱动/ScsiDisk 驱动</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| ATA/ATAPI PassThru 驱动                 |</span><br><span class="line">| (EFI_ATA_PASS_THRU_PROTOCOL)            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| IDE Controller 或 SATA Controller 驱动 |</span><br><span class="line">| (EFI_IDE/SATA/AHCI_CONTROLLER_INIT)     |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| 硬件 (IDE 控制器或 SATA 控制器)         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>参考资料<br>1.<a href="https://blog.csdn.net/weixin_38233274/article/details/79030426">https://blog.csdn.net/weixin_38233274/article/details/79030426</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> BIOS </category>
+          
+          <category> EDKII </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>BIOS整体流程</title>
       <link href="/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/"/>
       <url>/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/</url>
