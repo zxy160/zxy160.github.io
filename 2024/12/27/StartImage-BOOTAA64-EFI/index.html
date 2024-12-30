@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="一、实现方法二、代码链接链接：https:&#x2F;&#x2F;pan.quark.cn&#x2F;s&#x2F;9a8b14b347c4 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879">
+<meta property="og:type" content="article">
+<meta property="og:title" content="StartImage-BOOTAA64.EFI">
+<meta property="og:url" content="http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、实现方法二、代码链接链接：https:&#x2F;&#x2F;pan.quark.cn&#x2F;s&#x2F;9a8b14b347c4 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-12-27T06:49:30.000Z">
+<meta property="article:modified_time" content="2024-12-30T08:50:53.117Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>StartImage-BOOTAA64.EFI</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&text=StartImage-BOOTAA64.EFI"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&is_video=false&description=StartImage-BOOTAA64.EFI"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=StartImage-BOOTAA64.EFI&body=Check out this article: http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&name=StartImage-BOOTAA64.EFI&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&t=StartImage-BOOTAA64.EFI"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">一、实现方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BB%A3%E7%A0%81%E9%93%BE%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text">二、代码链接</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        StartImage-BOOTAA64.EFI
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">John Doe</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-12-27T06:49:30.000Z" class="dt-published" itemprop="datePublished">2024-12-27</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/BIOS/">BIOS</a> › <a class="category-link" href="/categories/BIOS/StartImage/">StartImage</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="一、实现方法"><a href="#一、实现方法" class="headerlink" title="一、实现方法"></a>一、实现方法</h1><h1 id="二、代码链接"><a href="#二、代码链接" class="headerlink" title="二、代码链接"></a>二、代码链接</h1><p>链接：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/9a8b14b347c4">https://pan.quark.cn/s/9a8b14b347c4</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  EFI_STATUS                        Status;</span><br><span class="line">  UINT32                            Index;</span><br><span class="line">  UINTN                             HandleCount;</span><br><span class="line">  EFI_HANDLE                        *HandleBuffer = NULL;</span><br><span class="line">  EFI_DEVICE_PATH_PROTOCOL          *DevicePath; </span><br><span class="line">  EFI_SIMPLE_FILE_SYSTEM_PROTOCOL   *Volume = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *RootDir = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *BootFile = NULL;</span><br><span class="line">  EFI_HANDLE                        NewImageHandle;</span><br><span class="line">  UINTN                             BufferSize=10240*1024;</span><br><span class="line">  VOID                              *Buffer = NULL;</span><br><span class="line">//   EFI_FILE_INFO                     *FileInfo = NULL;</span><br><span class="line">//   UINTN                             FileInfoSize = 0;</span><br><span class="line"></span><br><span class="line">  Status = gBS-&gt;LocateHandleBuffer (</span><br><span class="line">                    ByProtocol,</span><br><span class="line">                    &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">                    NULL,</span><br><span class="line">                    &amp;HandleCount,</span><br><span class="line">                    &amp;HandleBuffer);</span><br><span class="line">  <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">      Print(L<span class="string">&quot;Failed to locate handles: %r\n&quot;</span>, Status);</span><br><span class="line">      <span class="built_in">return</span> Status;</span><br><span class="line">  &#125;                    </span><br><span class="line">  <span class="keyword">for</span>(Index=0;Index&lt;HandleCount;Index++)&#123;</span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiDevicePathProtocolGuid,</span><br><span class="line">        (VOID**)&amp;DevicePath</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get device path for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">        (VOID**)&amp;Volume</span><br><span class="line">    );  </span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get file system protocol for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = Volume-&gt;OpenVolume(Volume, &amp;RootDir);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open volume on handle[%u]: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;        </span><br><span class="line">    // 打开 BOOTAA64.EFI 文件</span><br><span class="line">    Status = RootDir-&gt;Open(</span><br><span class="line">        RootDir,</span><br><span class="line">        &amp;BootFile,</span><br><span class="line">        L<span class="string">&quot;\\EFI\\BOOT\\BOOTAA64.EFI&quot;</span>,</span><br><span class="line">        EFI_FILE_MODE_READ,</span><br><span class="line">        0</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open \\EFI\\BOOT\\BOOTAA64.EFI: %r\n&quot;</span>, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    /*</span><br><span class="line">    // 获取文件信息以动态确定文件大小</span><br><span class="line">    FileInfoSize = 0;</span><br><span class="line">    Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, NULL);</span><br><span class="line">    Print(L<span class="string">&quot;120\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Status == EFI_BUFFER_TOO_SMALL) &#123;</span><br><span class="line">        FileInfo = AllocatePool(FileInfoSize);</span><br><span class="line">        Print(L<span class="string">&quot;123\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (FileInfo == NULL) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to allocate memory for file info\n&quot;</span>);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, FileInfo);</span><br><span class="line">        Print(L<span class="string">&quot;131\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to get file info: %r\n&quot;</span>, Status);</span><br><span class="line">            FreePool(FileInfo);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        BufferSize = FileInfo-&gt;FileSize;</span><br><span class="line">        Print(L<span class="string">&quot;140 %lu\n&quot;</span>,BufferSize);</span><br><span class="line">        FreePool(FileInfo);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to retrieve file info size: %r\n&quot;</span>, Status);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 分配缓冲区</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    Print(L<span class="string">&quot;150\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    */</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 读取文件内容</span><br><span class="line">    Status = BootFile-&gt;Read(BootFile, &amp;BufferSize, Buffer);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">         Print(L<span class="string">&quot;Failed to read file: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 加载并启动 BOOTAA64.EFI 文件</span><br><span class="line">    Status = gBS-&gt;LoadImage(</span><br><span class="line">        FALSE, </span><br><span class="line">        ImageHandle, </span><br><span class="line">        DevicePath, </span><br><span class="line">        Buffer, </span><br><span class="line">        BufferSize, </span><br><span class="line">        &amp;NewImageHandle</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to load image: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;StartImage(NewImageHandle, NULL, NULL);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to start image: %r\n&quot;</span>, Status);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Image started successfully\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 关闭打开的文件和资源</span><br><span class="line">    FreePool(Buffer);</span><br><span class="line">    BootFile-&gt;Close(BootFile);</span><br><span class="line">    // <span class="built_in">break</span>;  // 找到第一个有效的启动文件后退出</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  FreePool(HandleBuffer);</span><br><span class="line">  <span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">一、实现方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BB%A3%E7%A0%81%E9%93%BE%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text">二、代码链接</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&text=StartImage-BOOTAA64.EFI"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&is_video=false&description=StartImage-BOOTAA64.EFI"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=StartImage-BOOTAA64.EFI&body=Check out this article: http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&title=StartImage-BOOTAA64.EFI"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&name=StartImage-BOOTAA64.EFI&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/&t=StartImage-BOOTAA64.EFI"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2024
+    John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
