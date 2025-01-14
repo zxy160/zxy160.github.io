@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Console</title>
+      <link href="/2025/01/14/Console/"/>
+      <url>/2025/01/14/Console/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ConSplitterDxe"><a href="#ConSplitterDxe" class="headerlink" title="ConSplitterDxe"></a>ConSplitterDxe</h1><p>参考博客：<a href="https://blog.csdn.net/Pedroa/article/details/49717639">https://blog.csdn.net/Pedroa/article/details/49717639</a><br>初始化系统表gST中的输入输出和标准错误控制台设备。<br><img src="/images/6.png" alt="图1"></p><h1 id="GraphicsConsoleDxe"><a href="#GraphicsConsoleDxe" class="headerlink" title="GraphicsConsoleDxe"></a>GraphicsConsoleDxe</h1><p>参考博客：<a href="https://blog.csdn.net/jiangwei0512/article/details/131447168">https://blog.csdn.net/jiangwei0512/article/details/131447168</a><br>将图形或者字符显示到屏幕上</p><h1 id="TerminalDxe"><a href="#TerminalDxe" class="headerlink" title="TerminalDxe"></a>TerminalDxe</h1><p>参考博客：<a href="https://blog.csdn.net/jiangwei0512/article/details/144439446">https://blog.csdn.net/jiangwei0512/article/details/144439446</a></p><h1 id="ConPlatformDxe"><a href="#ConPlatformDxe" class="headerlink" title="ConPlatformDxe"></a>ConPlatformDxe</h1><p>chatgpt的回答：ConPlatformDxe 是一个 UEFI 驱动程序，主要用于管理控制台设备的连接、断开和环境变量的更新</p><h1 id="LangFontDxe"><a href="#LangFontDxe" class="headerlink" title="LangFontDxe"></a>LangFontDxe</h1><p>应该是记录是字</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> BIOS </category>
+          
+          <category> Console </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Shell下打印启动项</title>
       <link href="/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/"/>
       <url>/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/</url>
