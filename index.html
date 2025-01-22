@@ -1,395 +1,1064 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="zh-CN">
 <head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta property="og:type" content="website">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="zxy">
 <meta name="twitter:card" content="summary">
-    
-    
-      
-        
-          <link rel="shortcut icon" href="/images/favicon.ico">
-        
-      
-      
-        
-          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-        
-      
-      
-        
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-        
-      
-    
-    <!-- title -->
-    <title>Hexo</title>
-    <!-- async scripts -->
-    <!-- Google Analytics -->
+
+<link rel="canonical" href="http://example.com/">
 
 
-    <!-- Umami Analytics -->
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
 
-
-    <!-- styles -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-    <!-- persian styles -->
-    
-    <!-- rss -->
-    
-    
-	<!-- mathjax -->
-	
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-<body class="max-width mx-auto px3 ltr">
-    
-    <div class="content index py4 h-card">
-        
-          <header id="header">
-  <a class="u-url u-uid" href="/">
+  <title>Hexo</title>
   
-    
-      <img id="logo" alt class="u-logo" src="/images/logo.png" />
-    
-  
-    <div id="title">
-      <h1 class="p-name">Hexo</h1>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-  </a>
-  <div id="nav">
-    <ul>
-      <li class="icon">
-        <a href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-2x"></i></a>
-      </li>
-      <!--
-     --><li><a href="/">Home</a></li><!--
-   --><!--
-     --><li><a href="/categories/">categories</a></li><!--
-   --><!--
-     --><li><a href="/search/">Search</a></li><!--
-   --><!--
-     --><li><a href="/about/">About</a></li><!--
-   -->
-    </ul>
   </div>
-</header>
 
-        
-        <section id="about" class="p-note">
-  
-  
-    <p>
-      Find me on
-      
-      
-      
-        
-        
-          <a class="icon u-email" target="_blank" rel="noopener" href="mailto:1715269118@qq.com" aria-label="mail" title="mail">
-            <i class="fa-solid fa-envelope"></i><!--
-      ---></a>
-        <!--
-    --->.
-        
-      
-    </p>
-  
-</section>
+  <div class="site-meta">
 
-<section id="writing">
-  <span class="h1"><a href="/">Writing</a></span>
-  
-  <ul class="post-list">
-    
-    
-      
-    
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2025-01-21T08:36:59.000Z" class="dt-published" itemprop="datePublished">2025-01-21</time>
-        
-      
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
+</div>
 
 
-        <span>
-    
-        <a class="" href="/2025/01/21/HII%E6%95%B0%E6%8D%AE%E5%BA%93/">HII数据库</a>
-    
 
 
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2025-01-14T09:10:30.000Z" class="dt-published" itemprop="datePublished">2025-01-14</time>
-        
-      
-    </div>
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-        <span>
-    
-        <a class="" href="/2025/01/14/Console/">Console</a>
-    
+  </li>
+        <li class="menu-item menu-item-about">
 
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-30T09:58:04.000Z" class="dt-published" itemprop="datePublished">2024-12-30</time>
-        
-      
-    </div>
+  </li>
+        <li class="menu-item menu-item-categories">
 
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
-        <span>
-    
-        <a class="" href="/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/">Shell下打印启动项</a>
-    
+  </li>
+        <li class="menu-item menu-item-archives">
 
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-27T06:49:30.000Z" class="dt-published" itemprop="datePublished">2024-12-27</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/12/27/StartImage-BOOTAA64-EFI/">StartImage-BOOTAA64.EFI</a>
-    
-
-
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-18T03:09:13.000Z" class="dt-published" itemprop="datePublished">2024-12-18</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/">BIOS相关Spec</a>
-    
-
-
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-18T02:43:40.000Z" class="dt-published" itemprop="datePublished">2024-12-18</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/12/18/SATA%E7%9B%B8%E5%85%B3/">SATA相关</a>
-    
-
-
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-17T09:22:33.000Z" class="dt-published" itemprop="datePublished">2024-12-17</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/">BIOS整体流程</a>
-    
-
-
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-04T09:31:52.000Z" class="dt-published" itemprop="datePublished">2024-12-04</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/12/04/%E5%AE%89%E8%A3%85%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%B7%B3%E8%BF%87%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/">安装新系统跳过网络连接</a>
-    
-
-
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-12-03T10:17:30.000Z" class="dt-published" itemprop="datePublished">2024-12-03</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/12/03/COM%E5%8F%A3/">COM口</a>
-    
-
-
-</span>
-      </li>
-    
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2024-11-28T03:43:07.000Z" class="dt-published" itemprop="datePublished">2024-11-28</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/">音频接口</a>
-    
-
-
-</span>
-      </li>
-    
+  </li>
   </ul>
-  
+</nav>
+
+
+
+
+</div>
+    </header>
+
     
-    <div class="pagination">
-        
-        <span class="page-number">Page 1 of 2</span>
-        
-            <a href="/page/2/"><i class="fa-solid fa-angle-right"></i>
-            </a>
-        
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/21/HII%E6%95%B0%E6%8D%AE%E5%BA%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/21/HII%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-title-link" itemprop="url">HII数据库</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-01-21 16:36:59" itemprop="dateCreated datePublished" datetime="2025-01-21T16:36:59+08:00">2025-01-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-01-22 15:00:35" itemprop="dateModified" datetime="2025-01-22T15:00:35+08:00">2025-01-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/HII/" itemprop="url" rel="index"><span itemprop="name">HII</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1>
+      
     </div>
 
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/14/Console/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/14/Console/" class="post-title-link" itemprop="url">Console</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-01-14 17:10:30 / 修改时间：17:49:36" itemprop="dateCreated datePublished" datetime="2025-01-14T17:10:30+08:00">2025-01-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/Console/" itemprop="url" rel="index"><span itemprop="name">Console</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="ConSplitterDxe"><a href="#ConSplitterDxe" class="headerlink" title="ConSplitterDxe"></a>ConSplitterDxe</h1><p>参考博客：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Pedroa/article/details/49717639">https://blog.csdn.net/Pedroa/article/details/49717639</a><br>初始化系统表gST中的输入输出和标准错误控制台设备。<br><img src="/images/6.png" alt="图1"></p>
+<h1 id="GraphicsConsoleDxe"><a href="#GraphicsConsoleDxe" class="headerlink" title="GraphicsConsoleDxe"></a>GraphicsConsoleDxe</h1><p>参考博客：<a target="_blank" rel="noopener" href="https://blog.csdn.net/jiangwei0512/article/details/131447168">https://blog.csdn.net/jiangwei0512/article/details/131447168</a><br>将图形或者字符显示到屏幕上</p>
+<h1 id="TerminalDxe"><a href="#TerminalDxe" class="headerlink" title="TerminalDxe"></a>TerminalDxe</h1><p>参考博客：<a target="_blank" rel="noopener" href="https://blog.csdn.net/jiangwei0512/article/details/144439446">https://blog.csdn.net/jiangwei0512/article/details/144439446</a></p>
+<h1 id="ConPlatformDxe"><a href="#ConPlatformDxe" class="headerlink" title="ConPlatformDxe"></a>ConPlatformDxe</h1><p>chatgpt的回答：ConPlatformDxe 是一个 UEFI 驱动程序，主要用于管理控制台设备的连接、断开和环境变量的更新</p>
+<h1 id="LangFontDxe"><a href="#LangFontDxe" class="headerlink" title="LangFontDxe"></a>LangFontDxe</h1><p>应该是记录是字</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/" class="post-title-link" itemprop="url">Shell下打印启动项</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-12-30 17:58:04 / 修改时间：17:59:42" itemprop="dateCreated datePublished" datetime="2024-12-30T17:58:04+08:00">2024-12-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/%E5%90%AF%E5%8A%A8%E9%A1%B9/" itemprop="url" rel="index"><span itemprop="name">启动项</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="一、如何实现"><a href="#一、如何实现" class="headerlink" title="一、如何实现"></a>一、如何实现</h1><h1 id="二、代码链接"><a href="#二、代码链接" class="headerlink" title="二、代码链接"></a>二、代码链接</h1><p>链接：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/e5cbcb96329a">https://pan.quark.cn/s/e5cbcb96329a</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">EFI_STATUS                                Status;</span><br><span class="line">UINT16                                    *BootOrder;</span><br><span class="line">UINTN                                     BootOrderSize;</span><br><span class="line">UINT16                                    BootDeviceNum;</span><br><span class="line">UINT16                                    BootOptionName[20];</span><br><span class="line">UINT8                                     *BootOption;</span><br><span class="line">UINTN                                     Index;</span><br><span class="line">UINTN                                     BootOptionSize;</span><br><span class="line">UINT8                                     *Ptr;</span><br><span class="line">UINT32                                    Attribute;</span><br><span class="line">UINT16                                    DevicePathSize;</span><br><span class="line">CHAR16                                    *Description;</span><br><span class="line">UINTN                                     DescriptionSize;</span><br><span class="line">EFI_DEVICE_PATH_PROTOCOL                  *DevicePath;</span><br><span class="line">CHAR16                                    *DevicePathStr;</span><br><span class="line"></span><br><span class="line">BootOrder     = NULL;</span><br><span class="line">BootOrderSize = 0;</span><br><span class="line"></span><br><span class="line">Status = GetEfiGlobalVariable2 (L<span class="string">&quot;BootOrder&quot;</span>, (VOID **) &amp;BootOrder, &amp;BootOrderSize);</span><br><span class="line"><span class="keyword">if</span>(BootOrder==NULL)&#123;</span><br><span class="line">  Print(L<span class="string">&quot;Get Global Variable %r!&quot;</span>,Status);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (BootOrderSize != 0) &#123;</span><br><span class="line">  BootDeviceNum = (UINT16) (BootOrderSize / sizeof(UINT16));</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  BootDeviceNum = 0;</span><br><span class="line">  BootOrder     = NULL;</span><br><span class="line">&#125;</span><br><span class="line">Print(L<span class="string">&quot;BootDeviceNum %d\n&quot;</span>,BootDeviceNum);</span><br><span class="line"><span class="keyword">for</span>(Index=0;Index&lt;BootDeviceNum;Index++)&#123;</span><br><span class="line">  UnicodeSPrint (BootOptionName, sizeof (BootOptionName), L<span class="string">&quot;Boot%04x&quot;</span>, BootOrder[Index]);</span><br><span class="line">  GetEfiGlobalVariable2 (BootOptionName, (VOID **) &amp;BootOption, &amp;BootOptionSize);</span><br><span class="line">  <span class="keyword">if</span>(BootOption==NULL)&#123;</span><br><span class="line">      <span class="built_in">continue</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Ptr = BootOption;</span><br><span class="line">  Attribute = *((UINT32 *)Ptr);</span><br><span class="line">  Ptr += sizeof(UINT32);</span><br><span class="line">  DevicePathSize = *((UINT16 *)Ptr);</span><br><span class="line">  Ptr += sizeof(UINT16);</span><br><span class="line">  Description = (CHAR16 *)Ptr;</span><br><span class="line">  DescriptionSize = StrSize(Description);</span><br><span class="line">  Ptr += DescriptionSize;</span><br><span class="line">  DevicePath = (EFI_DEVICE_PATH_PROTOCOL *)Ptr;</span><br><span class="line">  Ptr += DevicePathSize;</span><br><span class="line">  DevicePathStr = ConvertDevicePathToText(DevicePath, TRUE, TRUE);</span><br><span class="line"></span><br><span class="line">  Print(L&quot;IsActive=%d\n&quot;,(BOOLEAN) ((Attribute &amp; LOAD_OPTION_ACTIVE) == LOAD_OPTION_ACTIVE));</span><br><span class="line">  Print(L<span class="string">&quot;IsEfiBootDev=%d\n&quot;</span>,(BOOLEAN) ((DevicePath-&gt;Type != BBS_DEVICE_PATH) || (DevicePath-&gt;SubType != BBS_BBS_DP)));</span><br><span class="line">  Print(L<span class="string">&quot;Description = %s\n&quot;</span>,Description);</span><br><span class="line">  Print(L<span class="string">&quot;DevicePathStr %s\n&quot;</span>,DevicePathStr);</span><br><span class="line">  Print(L<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/27/StartImage-BOOTAA64-EFI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/27/StartImage-BOOTAA64-EFI/" class="post-title-link" itemprop="url">StartImage-BOOTAA64.EFI</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-12-27 14:49:30" itemprop="dateCreated datePublished" datetime="2024-12-27T14:49:30+08:00">2024-12-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-12-30 16:50:53" itemprop="dateModified" datetime="2024-12-30T16:50:53+08:00">2024-12-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/StartImage/" itemprop="url" rel="index"><span itemprop="name">StartImage</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="一、实现方法"><a href="#一、实现方法" class="headerlink" title="一、实现方法"></a>一、实现方法</h1><h1 id="二、代码链接"><a href="#二、代码链接" class="headerlink" title="二、代码链接"></a>二、代码链接</h1><p>链接：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/9a8b14b347c4">https://pan.quark.cn/s/9a8b14b347c4</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  EFI_STATUS                        Status;</span><br><span class="line">  UINT32                            Index;</span><br><span class="line">  UINTN                             HandleCount;</span><br><span class="line">  EFI_HANDLE                        *HandleBuffer = NULL;</span><br><span class="line">  EFI_DEVICE_PATH_PROTOCOL          *DevicePath; </span><br><span class="line">  EFI_SIMPLE_FILE_SYSTEM_PROTOCOL   *Volume = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *RootDir = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *BootFile = NULL;</span><br><span class="line">  EFI_HANDLE                        NewImageHandle;</span><br><span class="line">  UINTN                             BufferSize=10240*1024;</span><br><span class="line">  VOID                              *Buffer = NULL;</span><br><span class="line">//   EFI_FILE_INFO                     *FileInfo = NULL;</span><br><span class="line">//   UINTN                             FileInfoSize = 0;</span><br><span class="line"></span><br><span class="line">  Status = gBS-&gt;LocateHandleBuffer (</span><br><span class="line">                    ByProtocol,</span><br><span class="line">                    &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">                    NULL,</span><br><span class="line">                    &amp;HandleCount,</span><br><span class="line">                    &amp;HandleBuffer);</span><br><span class="line">  <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">      Print(L<span class="string">&quot;Failed to locate handles: %r\n&quot;</span>, Status);</span><br><span class="line">      <span class="built_in">return</span> Status;</span><br><span class="line">  &#125;                    </span><br><span class="line">  <span class="keyword">for</span>(Index=0;Index&lt;HandleCount;Index++)&#123;</span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiDevicePathProtocolGuid,</span><br><span class="line">        (VOID**)&amp;DevicePath</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get device path for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">        (VOID**)&amp;Volume</span><br><span class="line">    );  </span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get file system protocol for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = Volume-&gt;OpenVolume(Volume, &amp;RootDir);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open volume on handle[%u]: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;        </span><br><span class="line">    // 打开 BOOTAA64.EFI 文件</span><br><span class="line">    Status = RootDir-&gt;Open(</span><br><span class="line">        RootDir,</span><br><span class="line">        &amp;BootFile,</span><br><span class="line">        L<span class="string">&quot;\\EFI\\BOOT\\BOOTAA64.EFI&quot;</span>,</span><br><span class="line">        EFI_FILE_MODE_READ,</span><br><span class="line">        0</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open \\EFI\\BOOT\\BOOTAA64.EFI: %r\n&quot;</span>, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    /*</span><br><span class="line">    // 获取文件信息以动态确定文件大小</span><br><span class="line">    FileInfoSize = 0;</span><br><span class="line">    Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, NULL);</span><br><span class="line">    Print(L<span class="string">&quot;120\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Status == EFI_BUFFER_TOO_SMALL) &#123;</span><br><span class="line">        FileInfo = AllocatePool(FileInfoSize);</span><br><span class="line">        Print(L<span class="string">&quot;123\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (FileInfo == NULL) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to allocate memory for file info\n&quot;</span>);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, FileInfo);</span><br><span class="line">        Print(L<span class="string">&quot;131\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to get file info: %r\n&quot;</span>, Status);</span><br><span class="line">            FreePool(FileInfo);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        BufferSize = FileInfo-&gt;FileSize;</span><br><span class="line">        Print(L<span class="string">&quot;140 %lu\n&quot;</span>,BufferSize);</span><br><span class="line">        FreePool(FileInfo);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to retrieve file info size: %r\n&quot;</span>, Status);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 分配缓冲区</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    Print(L<span class="string">&quot;150\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    */</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 读取文件内容</span><br><span class="line">    Status = BootFile-&gt;Read(BootFile, &amp;BufferSize, Buffer);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">         Print(L<span class="string">&quot;Failed to read file: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 加载并启动 BOOTAA64.EFI 文件</span><br><span class="line">    Status = gBS-&gt;LoadImage(</span><br><span class="line">        FALSE, </span><br><span class="line">        ImageHandle, </span><br><span class="line">        DevicePath, </span><br><span class="line">        Buffer, </span><br><span class="line">        BufferSize, </span><br><span class="line">        &amp;NewImageHandle</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to load image: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;StartImage(NewImageHandle, NULL, NULL);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to start image: %r\n&quot;</span>, Status);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Image started successfully\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 关闭打开的文件和资源</span><br><span class="line">    FreePool(Buffer);</span><br><span class="line">    BootFile-&gt;Close(BootFile);</span><br><span class="line">    // <span class="built_in">break</span>;  // 找到第一个有效的启动文件后退出</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  FreePool(HandleBuffer);</span><br><span class="line">  <span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/" class="post-title-link" itemprop="url">BIOS相关Spec</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-12-18 11:09:13 / 修改时间：11:30:01" itemprop="dateCreated datePublished" datetime="2024-12-18T11:09:13+08:00">2024-12-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="UFEI-SPEC"><a href="#UFEI-SPEC" class="headerlink" title="UFEI SPEC"></a>UFEI SPEC</h1><p>官网链接：<a target="_blank" rel="noopener" href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Specification）</p>
+<h1 id="PI-SPEC"><a href="#PI-SPEC" class="headerlink" title="PI SPEC"></a>PI SPEC</h1><p>官网链接：<a target="_blank" rel="noopener" href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Platform Initialization Specification）</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/18/SATA%E7%9B%B8%E5%85%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/18/SATA%E7%9B%B8%E5%85%B3/" class="post-title-link" itemprop="url">SATA相关</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-12-18 10:43:40 / 修改时间：17:46:10" itemprop="dateCreated datePublished" datetime="2024-12-18T10:43:40+08:00">2024-12-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/EDKII/" itemprop="url" rel="index"><span itemprop="name">EDKII</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="硬盘IDE和AHCI模式的区别"><a href="#硬盘IDE和AHCI模式的区别" class="headerlink" title="硬盘IDE和AHCI模式的区别"></a>硬盘IDE和AHCI模式的区别</h1><p>通俗易懂的说法就是，IDE就是ATA模式，是并口传输模式，04年前普及的技术，理论上最大133Mb每秒。<br>AHCI就是SATA模式，串口传输模式，新技术，传输速度快，理论上最大300Mb每秒。</p>
+<h1 id="IdeController驱动"><a href="#IdeController驱动" class="headerlink" title="IdeController驱动"></a>IdeController驱动</h1><p>IdeController.c中</p>
+<h1 id="SataController驱动"><a href="#SataController驱动" class="headerlink" title="SataController驱动"></a>SataController驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Pci&#x2F;SataControllerDxe&#x2F;SataController.c中</p>
+<h1 id="AtaAtapiPassThru驱动"><a href="#AtaAtapiPassThru驱动" class="headerlink" title="AtaAtapiPassThru驱动"></a>AtaAtapiPassThru驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaAtapiPassThru&#x2F;AtaAtapiPassThru.c中</p>
+<h1 id="AtaBus驱动"><a href="#AtaBus驱动" class="headerlink" title="AtaBus驱动"></a>AtaBus驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaBusDxe&#x2F;AtaBus.c中</p>
+<h1 id="ScsiBus-驱动"><a href="#ScsiBus-驱动" class="headerlink" title="ScsiBus 驱动"></a>ScsiBus 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiBusDxe&#x2F;ScsiBus.c</p>
+<h1 id="ScsiDisk-驱动"><a href="#ScsiDisk-驱动" class="headerlink" title="ScsiDisk 驱动"></a>ScsiDisk 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiDiskDxe&#x2F;ScsiDisk.c</p>
+<h1 id="DiskIo-驱动"><a href="#DiskIo-驱动" class="headerlink" title="DiskIo 驱动"></a>DiskIo 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;DiskIoDxe&#x2F;DiskIo.c</p>
+<h1 id="Partition-驱动"><a href="#Partition-驱动" class="headerlink" title="Partition 驱动"></a>Partition 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;PartitionDxe&#x2F;Partition.c</p>
+<h1 id="SIMPLE-FILE驱动"><a href="#SIMPLE-FILE驱动" class="headerlink" title="SIMPLE_FILE驱动"></a>SIMPLE_FILE驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;FvSimpleFileSystemDxe&#x2F;FvSimpleFileSystemEntryPoint.c</p>
+<p>以上协议的关系如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">+-----------------------------------------+</span><br><span class="line">| 文件系统驱动 (EFI_SIMPLE_FILE_SYSTEM)   |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| Partition 驱动                         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| DiskIo 驱动                            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| **块设备驱动 (EFI_BLOCK_IO_PROTOCOL)**  | &lt;-- AtaBus 驱动/ScsiBus 驱动/ScsiDisk 驱动</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| ATA/ATAPI PassThru 驱动                 |</span><br><span class="line">| (EFI_ATA_PASS_THRU_PROTOCOL)            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| IDE Controller 或 SATA Controller 驱动 |</span><br><span class="line">| (EFI_IDE/SATA/AHCI_CONTROLLER_INIT)     |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| 硬件 (IDE 控制器或 SATA 控制器)         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>参考资料<br>1.<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_38233274/article/details/79030426">https://blog.csdn.net/weixin_38233274/article/details/79030426</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/" class="post-title-link" itemprop="url">BIOS整体流程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-12-17 17:22:33 / 修改时间：17:27:37" itemprop="dateCreated datePublished" datetime="2024-12-17T17:22:33+08:00">2024-12-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BIOS/" itemprop="url" rel="index"><span itemprop="name">BIOS</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="SEC"><a href="#SEC" class="headerlink" title="SEC"></a>SEC</h1><h1 id="PEI"><a href="#PEI" class="headerlink" title="PEI"></a>PEI</h1><h1 id="DXE"><a href="#DXE" class="headerlink" title="DXE"></a>DXE</h1><h1 id="BDS"><a href="#BDS" class="headerlink" title="BDS"></a>BDS</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/04/%E5%AE%89%E8%A3%85%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%B7%B3%E8%BF%87%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/04/%E5%AE%89%E8%A3%85%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%B7%B3%E8%BF%87%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/" class="post-title-link" itemprop="url">安装新系统跳过网络连接</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-12-04 17:31:52 / 修改时间：17:35:22" itemprop="dateCreated datePublished" datetime="2024-12-04T17:31:52+08:00">2024-12-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">系统</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>安装新系统时，遇到必须连接网络，否则无法下一步，敲快捷指令Shift+F10，调出如下图的界面，然后输入oobe\bypassnro即可跳过<br><img src="/images/5.jpg" alt="图1"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/03/COM%E5%8F%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/03/COM%E5%8F%A3/" class="post-title-link" itemprop="url">COM口</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-12-03 18:17:30 / 修改时间：18:24:12" itemprop="dateCreated datePublished" datetime="2024-12-03T18:17:30+08:00">2024-12-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A1%AC%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">硬件</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-主板上的com口"><a href="#1-主板上的com口" class="headerlink" title="1.主板上的com口"></a>1.主板上的com口</h1><p><img src="/images/3.png" alt="图1"><br><img src="/images/2.png" alt="图2"><br>这是一个 COM 端口的针脚定义图，标注为 COM_A，并显示了 RS232 接口相关的信号。</p>
+<p>各针脚信号含义<br>针脚 1：-NDCDA</p>
+<p>描述：数据载波检测信号 (DCD, Data Carrier Detect)。通常由调制解调器发出，用于通知终端是否检测到载波信号。<br>针脚 2：NSINA</p>
+<p>描述：接收数据 (RXD, Receive Data)。从外部设备接收到的数据信号。<br>针脚 3：NSOUTA</p>
+<p>描述：发送数据 (TXD, Transmit Data)。向外部设备发送的数据信号。<br>针脚 4：-NDTRA</p>
+<p>描述：数据终端准备好 (DTR, Data Terminal Ready)。用于通知对端设备，终端已经准备好通信。<br>针脚 5：接地 (GND)</p>
+<p>描述：信号的地线，作为所有信号的参考点。<br>针脚 6：-NDSRA</p>
+<p>描述：数据集准备好 (DSR, Data Set Ready)。通常由调制解调器发出，用于通知终端设备是否已准备好通信。<br>针脚 7：-NRTSA</p>
+<p>描述：请求发送 (RTS, Request To Send)。通知对端设备，终端设备希望发送数据。<br>针脚 8：-NCTSA</p>
+<p>描述：清除发送 (CTS, Clear To Send)。由对端设备发出，用于通知终端设备是否可以发送数据。<br>针脚 9：-NRIA</p>
+<p>描述：振铃指示 (RI, Ring Indicator)。当外部设备有呼叫时，产生的振铃信号指示。</p>
+<h1 id="2-机箱后的com口"><a href="#2-机箱后的com口" class="headerlink" title="2.机箱后的com口"></a>2.机箱后的com口</h1><p><img src="/images/4.png" alt="图3"><br>按序号说明：<br>1 载波检测(DCD)<br>2 接受数据(RXD)<br>3 发出数据(TXD)<br>4 数据终端准备好(DTR)<br>5 信号地线(SG)<br>6 数据准备好(DSR)<br>7 请求发送(RTS)<br>8 清除发送(CTS)<br>9 振铃指示(RI)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zxy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/" class="post-title-link" itemprop="url">音频接口</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-11-28 11:43:07" itemprop="dateCreated datePublished" datetime="2024-11-28T11:43:07+08:00">2024-11-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-12-03 17:43:48" itemprop="dateModified" datetime="2024-12-03T17:43:48+08:00">2024-12-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A1%AC%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">硬件</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="三色音频接口"><a href="#三色音频接口" class="headerlink" title="三色音频接口"></a>三色音频接口</h1><p>Line Out：一个插耳机（或音箱）是绿色的；</p>
+<p>MIC：一个插话筒（麦克风）是红色的；</p>
+<p>Line In：一个线路输入（一般用不着）是蓝色的。 比如想把以前磁带或收音机里的声音转录到电脑里，就可以用这个孔</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
-</section>
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy;
-    
-    
-    2016-2025
-    zxy
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/categories/">categories</a></li><!--
-     --><!--
-       --><li><a href="/search/">Search</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     -->
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
       </ul>
-    </nav>
-  </div>
-</footer>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zxy</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
 
     </div>
-    <!-- styles -->
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zxy</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
 
 
 
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
-
-
-    <!-- jquery -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
 
-<!-- clipboard -->
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
-<script src="/js/main.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
-<!-- search -->
 
-<!-- Baidu Analytics -->
+<script src="/js/next-boot.js"></script>
 
-<!-- Cloudflare Analytics -->
 
-<!-- Disqus Comments -->
 
-<!-- utterances Comments -->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
 
 </body>
 </html>
