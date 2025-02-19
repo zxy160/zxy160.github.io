@@ -1,245 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>HII数据库</title>
-      <link href="/2025/01/21/HII%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-      <url>/2025/01/21/HII%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-      
-        <content type="html"><![CDATA[<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>BIOS整体流程</title>
+    <url>/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="SEC"><a href="#SEC" class="headerlink" title="SEC"></a>SEC</h1><h1 id="PEI"><a href="#PEI" class="headerlink" title="PEI"></a>PEI</h1><h1 id="DXE"><a href="#DXE" class="headerlink" title="DXE"></a>DXE</h1><h1 id="BDS"><a href="#BDS" class="headerlink" title="BDS"></a>BDS</h1>]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
-          <category> HII </category>
-          
+        <category>BIOS</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Console</title>
-      <link href="/2025/01/14/Console/"/>
-      <url>/2025/01/14/Console/</url>
-      
-        <content type="html"><![CDATA[<h1 id="ConSplitterDxe"><a href="#ConSplitterDxe" class="headerlink" title="ConSplitterDxe"></a>ConSplitterDxe</h1><p>参考博客：<a href="https://blog.csdn.net/Pedroa/article/details/49717639">https://blog.csdn.net/Pedroa/article/details/49717639</a><br>初始化系统表gST中的输入输出和标准错误控制台设备。<br><img src="/images/6.png" alt="图1"></p><h1 id="GraphicsConsoleDxe"><a href="#GraphicsConsoleDxe" class="headerlink" title="GraphicsConsoleDxe"></a>GraphicsConsoleDxe</h1><p>参考博客：<a href="https://blog.csdn.net/jiangwei0512/article/details/131447168">https://blog.csdn.net/jiangwei0512/article/details/131447168</a><br>将图形或者字符显示到屏幕上</p><h1 id="TerminalDxe"><a href="#TerminalDxe" class="headerlink" title="TerminalDxe"></a>TerminalDxe</h1><p>参考博客：<a href="https://blog.csdn.net/jiangwei0512/article/details/144439446">https://blog.csdn.net/jiangwei0512/article/details/144439446</a></p><h1 id="ConPlatformDxe"><a href="#ConPlatformDxe" class="headerlink" title="ConPlatformDxe"></a>ConPlatformDxe</h1><p>chatgpt的回答：ConPlatformDxe 是一个 UEFI 驱动程序，主要用于管理控制台设备的连接、断开和环境变量的更新</p><h1 id="LangFontDxe"><a href="#LangFontDxe" class="headerlink" title="LangFontDxe"></a>LangFontDxe</h1><p>应该是记录是字</p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>BIOS相关Spec</title>
+    <url>/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/</url>
+    <content><![CDATA[<h1 id="UFEI-SPEC"><a href="#UFEI-SPEC" class="headerlink" title="UFEI SPEC"></a>UFEI SPEC</h1><p>官网链接：<a href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Specification）</p>
+<h1 id="PI-SPEC"><a href="#PI-SPEC" class="headerlink" title="PI SPEC"></a>PI SPEC</h1><p>官网链接：<a href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Platform Initialization Specification）</p>
+]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
-          <category> Console </category>
-          
+        <category>BIOS</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Shell下打印启动项</title>
-      <link href="/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/"/>
-      <url>/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、如何实现"><a href="#一、如何实现" class="headerlink" title="一、如何实现"></a>一、如何实现</h1><h1 id="二、代码链接"><a href="#二、代码链接" class="headerlink" title="二、代码链接"></a>二、代码链接</h1><p>链接：<a href="https://pan.quark.cn/s/e5cbcb96329a">https://pan.quark.cn/s/e5cbcb96329a</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">EFI_STATUS                                Status;</span><br><span class="line">UINT16                                    *BootOrder;</span><br><span class="line">UINTN                                     BootOrderSize;</span><br><span class="line">UINT16                                    BootDeviceNum;</span><br><span class="line">UINT16                                    BootOptionName[20];</span><br><span class="line">UINT8                                     *BootOption;</span><br><span class="line">UINTN                                     Index;</span><br><span class="line">UINTN                                     BootOptionSize;</span><br><span class="line">UINT8                                     *Ptr;</span><br><span class="line">UINT32                                    Attribute;</span><br><span class="line">UINT16                                    DevicePathSize;</span><br><span class="line">CHAR16                                    *Description;</span><br><span class="line">UINTN                                     DescriptionSize;</span><br><span class="line">EFI_DEVICE_PATH_PROTOCOL                  *DevicePath;</span><br><span class="line">CHAR16                                    *DevicePathStr;</span><br><span class="line"></span><br><span class="line">BootOrder     = NULL;</span><br><span class="line">BootOrderSize = 0;</span><br><span class="line"></span><br><span class="line">Status = GetEfiGlobalVariable2 (L<span class="string">&quot;BootOrder&quot;</span>, (VOID **) &amp;BootOrder, &amp;BootOrderSize);</span><br><span class="line"><span class="keyword">if</span>(BootOrder==NULL)&#123;</span><br><span class="line">  Print(L<span class="string">&quot;Get Global Variable %r!&quot;</span>,Status);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (BootOrderSize != 0) &#123;</span><br><span class="line">  BootDeviceNum = (UINT16) (BootOrderSize / sizeof(UINT16));</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  BootDeviceNum = 0;</span><br><span class="line">  BootOrder     = NULL;</span><br><span class="line">&#125;</span><br><span class="line">Print(L<span class="string">&quot;BootDeviceNum %d\n&quot;</span>,BootDeviceNum);</span><br><span class="line"><span class="keyword">for</span>(Index=0;Index&lt;BootDeviceNum;Index++)&#123;</span><br><span class="line">  UnicodeSPrint (BootOptionName, sizeof (BootOptionName), L<span class="string">&quot;Boot%04x&quot;</span>, BootOrder[Index]);</span><br><span class="line">  GetEfiGlobalVariable2 (BootOptionName, (VOID **) &amp;BootOption, &amp;BootOptionSize);</span><br><span class="line">  <span class="keyword">if</span>(BootOption==NULL)&#123;</span><br><span class="line">      <span class="built_in">continue</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Ptr = BootOption;</span><br><span class="line">  Attribute = *((UINT32 *)Ptr);</span><br><span class="line">  Ptr += sizeof(UINT32);</span><br><span class="line">  DevicePathSize = *((UINT16 *)Ptr);</span><br><span class="line">  Ptr += sizeof(UINT16);</span><br><span class="line">  Description = (CHAR16 *)Ptr;</span><br><span class="line">  DescriptionSize = StrSize(Description);</span><br><span class="line">  Ptr += DescriptionSize;</span><br><span class="line">  DevicePath = (EFI_DEVICE_PATH_PROTOCOL *)Ptr;</span><br><span class="line">  Ptr += DevicePathSize;</span><br><span class="line">  DevicePathStr = ConvertDevicePathToText(DevicePath, TRUE, TRUE);</span><br><span class="line"></span><br><span class="line">  Print(L&quot;IsActive=%d\n&quot;,(BOOLEAN) ((Attribute &amp; LOAD_OPTION_ACTIVE) == LOAD_OPTION_ACTIVE));</span><br><span class="line">  Print(L<span class="string">&quot;IsEfiBootDev=%d\n&quot;</span>,(BOOLEAN) ((DevicePath-&gt;Type != BBS_DEVICE_PATH) || (DevicePath-&gt;SubType != BBS_BBS_DP)));</span><br><span class="line">  Print(L<span class="string">&quot;Description = %s\n&quot;</span>,Description);</span><br><span class="line">  Print(L<span class="string">&quot;DevicePathStr %s\n&quot;</span>,DevicePathStr);</span><br><span class="line">  Print(L<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>Console</title>
+    <url>/2025/01/14/Console/</url>
+    <content><![CDATA[<h1 id="ConSplitterDxe"><a href="#ConSplitterDxe" class="headerlink" title="ConSplitterDxe"></a>ConSplitterDxe</h1><p>参考博客：<a href="https://blog.csdn.net/Pedroa/article/details/49717639">https://blog.csdn.net/Pedroa/article/details/49717639</a><br>初始化系统表gST中的输入输出和标准错误控制台设备。</p>
+<span id="more"></span>
+<p><img src="/images/6.png" alt="图1"></p>
+<h1 id="GraphicsConsoleDxe"><a href="#GraphicsConsoleDxe" class="headerlink" title="GraphicsConsoleDxe"></a>GraphicsConsoleDxe</h1><p>参考博客：<a href="https://blog.csdn.net/jiangwei0512/article/details/131447168">https://blog.csdn.net/jiangwei0512/article/details/131447168</a><br>将图形或者字符显示到屏幕上</p>
+<h1 id="TerminalDxe"><a href="#TerminalDxe" class="headerlink" title="TerminalDxe"></a>TerminalDxe</h1><p>参考博客：<a href="https://blog.csdn.net/jiangwei0512/article/details/144439446">https://blog.csdn.net/jiangwei0512/article/details/144439446</a></p>
+<h1 id="ConPlatformDxe"><a href="#ConPlatformDxe" class="headerlink" title="ConPlatformDxe"></a>ConPlatformDxe</h1><p>chatgpt的回答：ConPlatformDxe 是一个 UEFI 驱动程序，主要用于管理控制台设备的连接、断开和环境变量的更新</p>
+<h1 id="LangFontDxe"><a href="#LangFontDxe" class="headerlink" title="LangFontDxe"></a>LangFontDxe</h1><p>应该是记录是字</p>
+]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
-          <category> 启动项 </category>
-          
+        <category>BIOS</category>
+        <category>Console</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>StartImage-BOOTAA64.EFI</title>
-      <link href="/2024/12/27/StartImage-BOOTAA64-EFI/"/>
-      <url>/2024/12/27/StartImage-BOOTAA64-EFI/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、实现方法"><a href="#一、实现方法" class="headerlink" title="一、实现方法"></a>一、实现方法</h1><h1 id="二、代码链接"><a href="#二、代码链接" class="headerlink" title="二、代码链接"></a>二、代码链接</h1><p>链接：<a href="https://pan.quark.cn/s/9a8b14b347c4">https://pan.quark.cn/s/9a8b14b347c4</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  EFI_STATUS                        Status;</span><br><span class="line">  UINT32                            Index;</span><br><span class="line">  UINTN                             HandleCount;</span><br><span class="line">  EFI_HANDLE                        *HandleBuffer = NULL;</span><br><span class="line">  EFI_DEVICE_PATH_PROTOCOL          *DevicePath; </span><br><span class="line">  EFI_SIMPLE_FILE_SYSTEM_PROTOCOL   *Volume = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *RootDir = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *BootFile = NULL;</span><br><span class="line">  EFI_HANDLE                        NewImageHandle;</span><br><span class="line">  UINTN                             BufferSize=10240*1024;</span><br><span class="line">  VOID                              *Buffer = NULL;</span><br><span class="line">//   EFI_FILE_INFO                     *FileInfo = NULL;</span><br><span class="line">//   UINTN                             FileInfoSize = 0;</span><br><span class="line"></span><br><span class="line">  Status = gBS-&gt;LocateHandleBuffer (</span><br><span class="line">                    ByProtocol,</span><br><span class="line">                    &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">                    NULL,</span><br><span class="line">                    &amp;HandleCount,</span><br><span class="line">                    &amp;HandleBuffer);</span><br><span class="line">  <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">      Print(L<span class="string">&quot;Failed to locate handles: %r\n&quot;</span>, Status);</span><br><span class="line">      <span class="built_in">return</span> Status;</span><br><span class="line">  &#125;                    </span><br><span class="line">  <span class="keyword">for</span>(Index=0;Index&lt;HandleCount;Index++)&#123;</span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiDevicePathProtocolGuid,</span><br><span class="line">        (VOID**)&amp;DevicePath</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get device path for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">        (VOID**)&amp;Volume</span><br><span class="line">    );  </span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get file system protocol for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = Volume-&gt;OpenVolume(Volume, &amp;RootDir);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open volume on handle[%u]: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;        </span><br><span class="line">    // 打开 BOOTAA64.EFI 文件</span><br><span class="line">    Status = RootDir-&gt;Open(</span><br><span class="line">        RootDir,</span><br><span class="line">        &amp;BootFile,</span><br><span class="line">        L<span class="string">&quot;\\EFI\\BOOT\\BOOTAA64.EFI&quot;</span>,</span><br><span class="line">        EFI_FILE_MODE_READ,</span><br><span class="line">        0</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open \\EFI\\BOOT\\BOOTAA64.EFI: %r\n&quot;</span>, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    /*</span><br><span class="line">    // 获取文件信息以动态确定文件大小</span><br><span class="line">    FileInfoSize = 0;</span><br><span class="line">    Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, NULL);</span><br><span class="line">    Print(L<span class="string">&quot;120\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Status == EFI_BUFFER_TOO_SMALL) &#123;</span><br><span class="line">        FileInfo = AllocatePool(FileInfoSize);</span><br><span class="line">        Print(L<span class="string">&quot;123\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (FileInfo == NULL) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to allocate memory for file info\n&quot;</span>);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, FileInfo);</span><br><span class="line">        Print(L<span class="string">&quot;131\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to get file info: %r\n&quot;</span>, Status);</span><br><span class="line">            FreePool(FileInfo);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        BufferSize = FileInfo-&gt;FileSize;</span><br><span class="line">        Print(L<span class="string">&quot;140 %lu\n&quot;</span>,BufferSize);</span><br><span class="line">        FreePool(FileInfo);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to retrieve file info size: %r\n&quot;</span>, Status);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 分配缓冲区</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    Print(L<span class="string">&quot;150\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    */</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 读取文件内容</span><br><span class="line">    Status = BootFile-&gt;Read(BootFile, &amp;BufferSize, Buffer);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">         Print(L<span class="string">&quot;Failed to read file: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 加载并启动 BOOTAA64.EFI 文件</span><br><span class="line">    Status = gBS-&gt;LoadImage(</span><br><span class="line">        FALSE, </span><br><span class="line">        ImageHandle, </span><br><span class="line">        DevicePath, </span><br><span class="line">        Buffer, </span><br><span class="line">        BufferSize, </span><br><span class="line">        &amp;NewImageHandle</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to load image: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;StartImage(NewImageHandle, NULL, NULL);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to start image: %r\n&quot;</span>, Status);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Image started successfully\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 关闭打开的文件和资源</span><br><span class="line">    FreePool(Buffer);</span><br><span class="line">    BootFile-&gt;Close(BootFile);</span><br><span class="line">    // <span class="built_in">break</span>;  // 找到第一个有效的启动文件后退出</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  FreePool(HandleBuffer);</span><br><span class="line">  <span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>COM口</title>
+    <url>/2024/12/03/COM%E5%8F%A3/</url>
+    <content><![CDATA[<h1 id="1-主板上的com口"><a href="#1-主板上的com口" class="headerlink" title="1.主板上的com口"></a>1.主板上的com口</h1><span id="more"></span>
+<p><img src="/images/3.png" alt="图1"><br><img src="/images/2.png" alt="图2"><br>这是一个 COM 端口的针脚定义图，标注为 COM_A，并显示了 RS232 接口相关的信号。</p>
+<p>各针脚信号含义<br>针脚 1：-NDCDA</p>
+<p>描述：数据载波检测信号 (DCD, Data Carrier Detect)。通常由调制解调器发出，用于通知终端是否检测到载波信号。<br>针脚 2：NSINA</p>
+<p>描述：接收数据 (RXD, Receive Data)。从外部设备接收到的数据信号。<br>针脚 3：NSOUTA</p>
+<p>描述：发送数据 (TXD, Transmit Data)。向外部设备发送的数据信号。<br>针脚 4：-NDTRA</p>
+<p>描述：数据终端准备好 (DTR, Data Terminal Ready)。用于通知对端设备，终端已经准备好通信。<br>针脚 5：接地 (GND)</p>
+<p>描述：信号的地线，作为所有信号的参考点。<br>针脚 6：-NDSRA</p>
+<p>描述：数据集准备好 (DSR, Data Set Ready)。通常由调制解调器发出，用于通知终端设备是否已准备好通信。<br>针脚 7：-NRTSA</p>
+<p>描述：请求发送 (RTS, Request To Send)。通知对端设备，终端设备希望发送数据。<br>针脚 8：-NCTSA</p>
+<p>描述：清除发送 (CTS, Clear To Send)。由对端设备发出，用于通知终端设备是否可以发送数据。<br>针脚 9：-NRIA</p>
+<p>描述：振铃指示 (RI, Ring Indicator)。当外部设备有呼叫时，产生的振铃信号指示。</p>
+<h1 id="2-机箱后的com口"><a href="#2-机箱后的com口" class="headerlink" title="2.机箱后的com口"></a>2.机箱后的com口</h1><p><img src="/images/4.png" alt="图3"><br>按序号说明：<br>1 载波检测(DCD)<br>2 接受数据(RXD)<br>3 发出数据(TXD)<br>4 数据终端准备好(DTR)<br>5 信号地线(SG)<br>6 数据准备好(DSR)<br>7 请求发送(RTS)<br>8 清除发送(CTS)<br>9 振铃指示(RI)</p>
+]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
-          <category> StartImage </category>
-          
+        <category>硬件</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>BIOS相关Spec</title>
-      <link href="/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/"/>
-      <url>/2024/12/18/BIOS%E7%9B%B8%E5%85%B3Spec/</url>
-      
-        <content type="html"><![CDATA[<h1 id="UFEI-SPEC"><a href="#UFEI-SPEC" class="headerlink" title="UFEI SPEC"></a>UFEI SPEC</h1><p>官网链接：<a href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Specification）</p><h1 id="PI-SPEC"><a href="#PI-SPEC" class="headerlink" title="PI SPEC"></a>PI SPEC</h1><p>官网链接：<a href="https://uefi.org/specifications">https://uefi.org/specifications</a> （搜索UEFI Platform Initialization Specification）</p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>HII数据库</title>
+    <url>/2025/01/21/HII%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1>]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
+        <category>BIOS</category>
+        <category>HII</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>SATA相关</title>
-      <link href="/2024/12/18/SATA%E7%9B%B8%E5%85%B3/"/>
-      <url>/2024/12/18/SATA%E7%9B%B8%E5%85%B3/</url>
-      
-        <content type="html"><![CDATA[<h1 id="硬盘IDE和AHCI模式的区别"><a href="#硬盘IDE和AHCI模式的区别" class="headerlink" title="硬盘IDE和AHCI模式的区别"></a>硬盘IDE和AHCI模式的区别</h1><p>通俗易懂的说法就是，IDE就是ATA模式，是并口传输模式，04年前普及的技术，理论上最大133Mb每秒。<br>AHCI就是SATA模式，串口传输模式，新技术，传输速度快，理论上最大300Mb每秒。</p><h1 id="IdeController驱动"><a href="#IdeController驱动" class="headerlink" title="IdeController驱动"></a>IdeController驱动</h1><p>IdeController.c中</p><h1 id="SataController驱动"><a href="#SataController驱动" class="headerlink" title="SataController驱动"></a>SataController驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Pci&#x2F;SataControllerDxe&#x2F;SataController.c中</p><h1 id="AtaAtapiPassThru驱动"><a href="#AtaAtapiPassThru驱动" class="headerlink" title="AtaAtapiPassThru驱动"></a>AtaAtapiPassThru驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaAtapiPassThru&#x2F;AtaAtapiPassThru.c中</p><h1 id="AtaBus驱动"><a href="#AtaBus驱动" class="headerlink" title="AtaBus驱动"></a>AtaBus驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaBusDxe&#x2F;AtaBus.c中</p><h1 id="ScsiBus-驱动"><a href="#ScsiBus-驱动" class="headerlink" title="ScsiBus 驱动"></a>ScsiBus 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiBusDxe&#x2F;ScsiBus.c</p><h1 id="ScsiDisk-驱动"><a href="#ScsiDisk-驱动" class="headerlink" title="ScsiDisk 驱动"></a>ScsiDisk 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiDiskDxe&#x2F;ScsiDisk.c</p><h1 id="DiskIo-驱动"><a href="#DiskIo-驱动" class="headerlink" title="DiskIo 驱动"></a>DiskIo 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;DiskIoDxe&#x2F;DiskIo.c</p><h1 id="Partition-驱动"><a href="#Partition-驱动" class="headerlink" title="Partition 驱动"></a>Partition 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;PartitionDxe&#x2F;Partition.c</p><h1 id="SIMPLE-FILE驱动"><a href="#SIMPLE-FILE驱动" class="headerlink" title="SIMPLE_FILE驱动"></a>SIMPLE_FILE驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;FvSimpleFileSystemDxe&#x2F;FvSimpleFileSystemEntryPoint.c</p><p>以上协议的关系如下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">+-----------------------------------------+</span><br><span class="line">| 文件系统驱动 (EFI_SIMPLE_FILE_SYSTEM)   |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| Partition 驱动                         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| DiskIo 驱动                            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| **块设备驱动 (EFI_BLOCK_IO_PROTOCOL)**  | &lt;-- AtaBus 驱动/ScsiBus 驱动/ScsiDisk 驱动</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| ATA/ATAPI PassThru 驱动                 |</span><br><span class="line">| (EFI_ATA_PASS_THRU_PROTOCOL)            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| IDE Controller 或 SATA Controller 驱动 |</span><br><span class="line">| (EFI_IDE/SATA/AHCI_CONTROLLER_INIT)     |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| 硬件 (IDE 控制器或 SATA 控制器)         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>参考资料<br>1.<a href="https://blog.csdn.net/weixin_38233274/article/details/79030426">https://blog.csdn.net/weixin_38233274/article/details/79030426</a></p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>SATA相关</title>
+    <url>/2024/12/18/SATA%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<h1 id="硬盘IDE和AHCI模式的区别"><a href="#硬盘IDE和AHCI模式的区别" class="headerlink" title="硬盘IDE和AHCI模式的区别"></a>硬盘IDE和AHCI模式的区别</h1><p>通俗易懂的说法就是，IDE就是ATA模式，是并口传输模式，04年前普及的技术，理论上最大133Mb每秒。<br>AHCI就是SATA模式，串口传输模式，新技术，传输速度快，理论上最大300Mb每秒。</p>
+<span id="more"></span>
+<h1 id="IdeController驱动"><a href="#IdeController驱动" class="headerlink" title="IdeController驱动"></a>IdeController驱动</h1><p>IdeController.c中</p>
+<h1 id="SataController驱动"><a href="#SataController驱动" class="headerlink" title="SataController驱动"></a>SataController驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Pci&#x2F;SataControllerDxe&#x2F;SataController.c中</p>
+<h1 id="AtaAtapiPassThru驱动"><a href="#AtaAtapiPassThru驱动" class="headerlink" title="AtaAtapiPassThru驱动"></a>AtaAtapiPassThru驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaAtapiPassThru&#x2F;AtaAtapiPassThru.c中</p>
+<h1 id="AtaBus驱动"><a href="#AtaBus驱动" class="headerlink" title="AtaBus驱动"></a>AtaBus驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Ata&#x2F;AtaBusDxe&#x2F;AtaBus.c中</p>
+<h1 id="ScsiBus-驱动"><a href="#ScsiBus-驱动" class="headerlink" title="ScsiBus 驱动"></a>ScsiBus 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiBusDxe&#x2F;ScsiBus.c</p>
+<h1 id="ScsiDisk-驱动"><a href="#ScsiDisk-驱动" class="headerlink" title="ScsiDisk 驱动"></a>ScsiDisk 驱动</h1><p>MdeModulePkg&#x2F;Bus&#x2F;Scsi&#x2F;ScsiDiskDxe&#x2F;ScsiDisk.c</p>
+<h1 id="DiskIo-驱动"><a href="#DiskIo-驱动" class="headerlink" title="DiskIo 驱动"></a>DiskIo 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;DiskIoDxe&#x2F;DiskIo.c</p>
+<h1 id="Partition-驱动"><a href="#Partition-驱动" class="headerlink" title="Partition 驱动"></a>Partition 驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;Disk&#x2F;PartitionDxe&#x2F;Partition.c</p>
+<h1 id="SIMPLE-FILE驱动"><a href="#SIMPLE-FILE驱动" class="headerlink" title="SIMPLE_FILE驱动"></a>SIMPLE_FILE驱动</h1><p>MdeModulePkg&#x2F;Universal&#x2F;FvSimpleFileSystemDxe&#x2F;FvSimpleFileSystemEntryPoint.c</p>
+<p>以上协议的关系如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">+-----------------------------------------+</span><br><span class="line">| 文件系统驱动 (EFI_SIMPLE_FILE_SYSTEM)   |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| Partition 驱动                         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| DiskIo 驱动                            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| **块设备驱动 (EFI_BLOCK_IO_PROTOCOL)**  | &lt;-- AtaBus 驱动/ScsiBus 驱动/ScsiDisk 驱动</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| ATA/ATAPI PassThru 驱动                 |</span><br><span class="line">| (EFI_ATA_PASS_THRU_PROTOCOL)            |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| IDE Controller 或 SATA Controller 驱动 |</span><br><span class="line">| (EFI_IDE/SATA/AHCI_CONTROLLER_INIT)     |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line">| 硬件 (IDE 控制器或 SATA 控制器)         |</span><br><span class="line">+-----------------------------------------+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>参考资料<br>1.<a href="https://blog.csdn.net/weixin_38233274/article/details/79030426">https://blog.csdn.net/weixin_38233274/article/details/79030426</a></p>
+]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
-          <category> EDKII </category>
-          
+        <category>BIOS</category>
+        <category>EDKII</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>BIOS整体流程</title>
-      <link href="/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/"/>
-      <url>/2024/12/17/BIOS%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<h1 id="SEC"><a href="#SEC" class="headerlink" title="SEC"></a>SEC</h1><h1 id="PEI"><a href="#PEI" class="headerlink" title="PEI"></a>PEI</h1><h1 id="DXE"><a href="#DXE" class="headerlink" title="DXE"></a>DXE</h1><h1 id="BDS"><a href="#BDS" class="headerlink" title="BDS"></a>BDS</h1>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>Shell下打印启动项</title>
+    <url>/2024/12/30/Shell%E4%B8%8B%E6%89%93%E5%8D%B0%E5%90%AF%E5%8A%A8%E9%A1%B9/</url>
+    <content><![CDATA[<h1 id="一、如何实现"><a href="#一、如何实现" class="headerlink" title="一、如何实现"></a>一、如何实现</h1><p>链接：<a href="https://pan.quark.cn/s/e5cbcb96329a">https://pan.quark.cn/s/e5cbcb96329a</a></p>
+<span id="more"></span>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">EFI_STATUS                                Status;</span><br><span class="line">UINT16                                    *BootOrder;</span><br><span class="line">UINTN                                     BootOrderSize;</span><br><span class="line">UINT16                                    BootDeviceNum;</span><br><span class="line">UINT16                                    BootOptionName[20];</span><br><span class="line">UINT8                                     *BootOption;</span><br><span class="line">UINTN                                     Index;</span><br><span class="line">UINTN                                     BootOptionSize;</span><br><span class="line">UINT8                                     *Ptr;</span><br><span class="line">UINT32                                    Attribute;</span><br><span class="line">UINT16                                    DevicePathSize;</span><br><span class="line">CHAR16                                    *Description;</span><br><span class="line">UINTN                                     DescriptionSize;</span><br><span class="line">EFI_DEVICE_PATH_PROTOCOL                  *DevicePath;</span><br><span class="line">CHAR16                                    *DevicePathStr;</span><br><span class="line"></span><br><span class="line">BootOrder     = NULL;</span><br><span class="line">BootOrderSize = 0;</span><br><span class="line"></span><br><span class="line">Status = GetEfiGlobalVariable2 (L<span class="string">&quot;BootOrder&quot;</span>, (VOID **) &amp;BootOrder, &amp;BootOrderSize);</span><br><span class="line"><span class="keyword">if</span>(BootOrder==NULL)&#123;</span><br><span class="line">  Print(L<span class="string">&quot;Get Global Variable %r!&quot;</span>,Status);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (BootOrderSize != 0) &#123;</span><br><span class="line">  BootDeviceNum = (UINT16) (BootOrderSize / sizeof(UINT16));</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  BootDeviceNum = 0;</span><br><span class="line">  BootOrder     = NULL;</span><br><span class="line">&#125;</span><br><span class="line">Print(L<span class="string">&quot;BootDeviceNum %d\n&quot;</span>,BootDeviceNum);</span><br><span class="line"><span class="keyword">for</span>(Index=0;Index&lt;BootDeviceNum;Index++)&#123;</span><br><span class="line">  UnicodeSPrint (BootOptionName, sizeof (BootOptionName), L<span class="string">&quot;Boot%04x&quot;</span>, BootOrder[Index]);</span><br><span class="line">  GetEfiGlobalVariable2 (BootOptionName, (VOID **) &amp;BootOption, &amp;BootOptionSize);</span><br><span class="line">  <span class="keyword">if</span>(BootOption==NULL)&#123;</span><br><span class="line">      <span class="built_in">continue</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Ptr = BootOption;</span><br><span class="line">  Attribute = *((UINT32 *)Ptr);</span><br><span class="line">  Ptr += sizeof(UINT32);</span><br><span class="line">  DevicePathSize = *((UINT16 *)Ptr);</span><br><span class="line">  Ptr += sizeof(UINT16);</span><br><span class="line">  Description = (CHAR16 *)Ptr;</span><br><span class="line">  DescriptionSize = StrSize(Description);</span><br><span class="line">  Ptr += DescriptionSize;</span><br><span class="line">  DevicePath = (EFI_DEVICE_PATH_PROTOCOL *)Ptr;</span><br><span class="line">  Ptr += DevicePathSize;</span><br><span class="line">  DevicePathStr = ConvertDevicePathToText(DevicePath, TRUE, TRUE);</span><br><span class="line"></span><br><span class="line">  Print(L&quot;IsActive=%d\n&quot;,(BOOLEAN) ((Attribute &amp; LOAD_OPTION_ACTIVE) == LOAD_OPTION_ACTIVE));</span><br><span class="line">  Print(L<span class="string">&quot;IsEfiBootDev=%d\n&quot;</span>,(BOOLEAN) ((DevicePath-&gt;Type != BBS_DEVICE_PATH) || (DevicePath-&gt;SubType != BBS_BBS_DP)));</span><br><span class="line">  Print(L<span class="string">&quot;Description = %s\n&quot;</span>,Description);</span><br><span class="line">  Print(L<span class="string">&quot;DevicePathStr %s\n&quot;</span>,DevicePathStr);</span><br><span class="line">  Print(L<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-          
-          <category> BIOS </category>
-          
+        <category>BIOS</category>
+        <category>启动项</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>安装新系统跳过网络连接</title>
-      <link href="/2024/12/04/%E5%AE%89%E8%A3%85%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%B7%B3%E8%BF%87%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/"/>
-      <url>/2024/12/04/%E5%AE%89%E8%A3%85%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%B7%B3%E8%BF%87%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</url>
-      
-        <content type="html"><![CDATA[<p>安装新系统时，遇到必须连接网络，否则无法下一步，敲快捷指令Shift+F10，调出如下图的界面，然后输入oobe\bypassnro即可跳过<br><img src="/images/5.jpg" alt="图1"></p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>StartImage-BOOTAA64.EFI</title>
+    <url>/2024/12/27/StartImage-BOOTAA64-EFI/</url>
+    <content><![CDATA[<h1 id="一、实现方法"><a href="#一、实现方法" class="headerlink" title="一、实现方法"></a>一、实现方法</h1><h1 id="二、代码链接"><a href="#二、代码链接" class="headerlink" title="二、代码链接"></a>二、代码链接</h1><p>链接：<a href="https://pan.quark.cn/s/9a8b14b347c4">https://pan.quark.cn/s/9a8b14b347c4</a></p>
+<span id="more"></span>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  EFI_STATUS                        Status;</span><br><span class="line">  UINT32                            Index;</span><br><span class="line">  UINTN                             HandleCount;</span><br><span class="line">  EFI_HANDLE                        *HandleBuffer = NULL;</span><br><span class="line">  EFI_DEVICE_PATH_PROTOCOL          *DevicePath; </span><br><span class="line">  EFI_SIMPLE_FILE_SYSTEM_PROTOCOL   *Volume = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *RootDir = NULL;</span><br><span class="line">  EFI_FILE_PROTOCOL                 *BootFile = NULL;</span><br><span class="line">  EFI_HANDLE                        NewImageHandle;</span><br><span class="line">  UINTN                             BufferSize=10240*1024;</span><br><span class="line">  VOID                              *Buffer = NULL;</span><br><span class="line">//   EFI_FILE_INFO                     *FileInfo = NULL;</span><br><span class="line">//   UINTN                             FileInfoSize = 0;</span><br><span class="line"></span><br><span class="line">  Status = gBS-&gt;LocateHandleBuffer (</span><br><span class="line">                    ByProtocol,</span><br><span class="line">                    &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">                    NULL,</span><br><span class="line">                    &amp;HandleCount,</span><br><span class="line">                    &amp;HandleBuffer);</span><br><span class="line">  <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">      Print(L<span class="string">&quot;Failed to locate handles: %r\n&quot;</span>, Status);</span><br><span class="line">      <span class="built_in">return</span> Status;</span><br><span class="line">  &#125;                    </span><br><span class="line">  <span class="keyword">for</span>(Index=0;Index&lt;HandleCount;Index++)&#123;</span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiDevicePathProtocolGuid,</span><br><span class="line">        (VOID**)&amp;DevicePath</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get device path for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;HandleProtocol(</span><br><span class="line">        HandleBuffer[Index],</span><br><span class="line">        &amp;gEfiSimpleFileSystemProtocolGuid,</span><br><span class="line">        (VOID**)&amp;Volume</span><br><span class="line">    );  </span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to get file system protocol for handle %u: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = Volume-&gt;OpenVolume(Volume, &amp;RootDir);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open volume on handle[%u]: %r\n&quot;</span>, Index, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;        </span><br><span class="line">    // 打开 BOOTAA64.EFI 文件</span><br><span class="line">    Status = RootDir-&gt;Open(</span><br><span class="line">        RootDir,</span><br><span class="line">        &amp;BootFile,</span><br><span class="line">        L<span class="string">&quot;\\EFI\\BOOT\\BOOTAA64.EFI&quot;</span>,</span><br><span class="line">        EFI_FILE_MODE_READ,</span><br><span class="line">        0</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to open \\EFI\\BOOT\\BOOTAA64.EFI: %r\n&quot;</span>, Status);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    /*</span><br><span class="line">    // 获取文件信息以动态确定文件大小</span><br><span class="line">    FileInfoSize = 0;</span><br><span class="line">    Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, NULL);</span><br><span class="line">    Print(L<span class="string">&quot;120\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Status == EFI_BUFFER_TOO_SMALL) &#123;</span><br><span class="line">        FileInfo = AllocatePool(FileInfoSize);</span><br><span class="line">        Print(L<span class="string">&quot;123\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (FileInfo == NULL) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to allocate memory for file info\n&quot;</span>);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Status = BootFile-&gt;GetInfo(BootFile, &amp;gEfiFileInfoGuid, &amp;FileInfoSize, FileInfo);</span><br><span class="line">        Print(L<span class="string">&quot;131\n&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">            Print(L<span class="string">&quot;Failed to get file info: %r\n&quot;</span>, Status);</span><br><span class="line">            FreePool(FileInfo);</span><br><span class="line">            BootFile-&gt;Close(BootFile);</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        BufferSize = FileInfo-&gt;FileSize;</span><br><span class="line">        Print(L<span class="string">&quot;140 %lu\n&quot;</span>,BufferSize);</span><br><span class="line">        FreePool(FileInfo);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to retrieve file info size: %r\n&quot;</span>, Status);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 分配缓冲区</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    Print(L<span class="string">&quot;150\n&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    */</span><br><span class="line">    Buffer = AllocatePool(BufferSize);</span><br><span class="line">    <span class="keyword">if</span> (Buffer == NULL) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to allocate buffer for file content\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 读取文件内容</span><br><span class="line">    Status = BootFile-&gt;Read(BootFile, &amp;BufferSize, Buffer);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">         Print(L<span class="string">&quot;Failed to read file: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 加载并启动 BOOTAA64.EFI 文件</span><br><span class="line">    Status = gBS-&gt;LoadImage(</span><br><span class="line">        FALSE, </span><br><span class="line">        ImageHandle, </span><br><span class="line">        DevicePath, </span><br><span class="line">        Buffer, </span><br><span class="line">        BufferSize, </span><br><span class="line">        &amp;NewImageHandle</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to load image: %r\n&quot;</span>, Status);</span><br><span class="line">        FreePool(Buffer);</span><br><span class="line">        BootFile-&gt;Close(BootFile);</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Status = gBS-&gt;StartImage(NewImageHandle, NULL, NULL);</span><br><span class="line">    <span class="keyword">if</span> (EFI_ERROR(Status)) &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Failed to start image: %r\n&quot;</span>, Status);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Print(L<span class="string">&quot;Image started successfully\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    // 关闭打开的文件和资源</span><br><span class="line">    FreePool(Buffer);</span><br><span class="line">    BootFile-&gt;Close(BootFile);</span><br><span class="line">    // <span class="built_in">break</span>;  // 找到第一个有效的启动文件后退出</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  FreePool(HandleBuffer);</span><br><span class="line">  <span class="built_in">return</span> EFI_SUCCESS;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-          
-          <category> 系统 </category>
-          
+        <category>BIOS</category>
+        <category>StartImage</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>COM口</title>
-      <link href="/2024/12/03/COM%E5%8F%A3/"/>
-      <url>/2024/12/03/COM%E5%8F%A3/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1-主板上的com口"><a href="#1-主板上的com口" class="headerlink" title="1.主板上的com口"></a>1.主板上的com口</h1><p><img src="/images/3.png" alt="图1"><br><img src="/images/2.png" alt="图2"><br>这是一个 COM 端口的针脚定义图，标注为 COM_A，并显示了 RS232 接口相关的信号。</p><p>各针脚信号含义<br>针脚 1：-NDCDA</p><p>描述：数据载波检测信号 (DCD, Data Carrier Detect)。通常由调制解调器发出，用于通知终端是否检测到载波信号。<br>针脚 2：NSINA</p><p>描述：接收数据 (RXD, Receive Data)。从外部设备接收到的数据信号。<br>针脚 3：NSOUTA</p><p>描述：发送数据 (TXD, Transmit Data)。向外部设备发送的数据信号。<br>针脚 4：-NDTRA</p><p>描述：数据终端准备好 (DTR, Data Terminal Ready)。用于通知对端设备，终端已经准备好通信。<br>针脚 5：接地 (GND)</p><p>描述：信号的地线，作为所有信号的参考点。<br>针脚 6：-NDSRA</p><p>描述：数据集准备好 (DSR, Data Set Ready)。通常由调制解调器发出，用于通知终端设备是否已准备好通信。<br>针脚 7：-NRTSA</p><p>描述：请求发送 (RTS, Request To Send)。通知对端设备，终端设备希望发送数据。<br>针脚 8：-NCTSA</p><p>描述：清除发送 (CTS, Clear To Send)。由对端设备发出，用于通知终端设备是否可以发送数据。<br>针脚 9：-NRIA</p><p>描述：振铃指示 (RI, Ring Indicator)。当外部设备有呼叫时，产生的振铃信号指示。</p><h1 id="2-机箱后的com口"><a href="#2-机箱后的com口" class="headerlink" title="2.机箱后的com口"></a>2.机箱后的com口</h1><p><img src="/images/4.png" alt="图3"><br>按序号说明：<br>1 载波检测(DCD)<br>2 接受数据(RXD)<br>3 发出数据(TXD)<br>4 数据终端准备好(DTR)<br>5 信号地线(SG)<br>6 数据准备好(DSR)<br>7 请求发送(RTS)<br>8 清除发送(CTS)<br>9 振铃指示(RI)</p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>博客相关</title>
+    <url>/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<h1 id="一、写作和发布"><a href="#一、写作和发布" class="headerlink" title="一、写作和发布"></a>一、写作和发布</h1><h2 id="1-1-创建一篇新文章"><a href="#1-1-创建一篇新文章" class="headerlink" title="1.1 创建一篇新文章"></a>1.1 创建一篇新文章</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new post 文章名称</span><br></pre></td></tr></table></figure>
+<h2 id="1-2-本地启动"><a href="#1-2-本地启动" class="headerlink" title="1.2 本地启动"></a>1.2 本地启动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="1-3-上传git"><a href="#1-3-上传git" class="headerlink" title="1.3 上传git"></a>1.3 上传git</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h1 id="二、next博客主题设置"><a href="#二、next博客主题设置" class="headerlink" title="二、next博客主题设置"></a>二、next博客主题设置</h1><h2 id="2-1-添加搜索功能"><a href="#2-1-添加搜索功能" class="headerlink" title="2.1 添加搜索功能"></a>2.1 添加搜索功能</h2><p>#0x0.在根目录下打开git bash 并输入如下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+<p>#0x1 主题 的 _config 配置文件中找到 local_search，下面的 enable输入true即可。<br><img src="/images/7.png" alt="图片"><br>#0x2 在根目录的 _config.yml 文件中 的末尾添加下面的内容：（选项的内容可以适当修改）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-generator-searchdb</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10</span><br></pre></td></tr></table></figure>
+<h2 id="2-2-创建新菜单"><a href="#2-2-创建新菜单" class="headerlink" title="2.2 创建新菜单"></a>2.2 创建新菜单</h2><p>#0x0 打开 themes 的 next 的 _config.yml ，我们此时打开的是主题的配置文件，不是根目录的。搜索menu，即可看到：这里其实就是我们的博客菜单选项。<br><img src="/images/8.png" alt="图片"><br>#0x1 首先在 blog的根目录中打开 git bash黑窗口，输入以下的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags  # tags可以是其他的</span><br></pre></td></tr></table></figure>
+<p>#0x2 然后在这个 _config 的menu中把 tags这一项取消注释，然后重新构建</p>
+<h2 id="2-2-新文章的模版"><a href="#2-2-新文章的模版" class="headerlink" title="2.2 新文章的模版"></a>2.2 新文章的模版</h2><p>#0x0 很多小伙伴给自己个博客添加了很多其他的功能，但是每次写文章的时候都需要在文章的开头去写一遍，这简直就是重复造轮子。其实，你可以自己在scaffolds中去修改属于你自己的模板。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo-install-directory</span><br><span class="line">├── CNAME</span><br><span class="line">├── _config.yml  //Hexo的配置文件，可以配置主题、语言等</span><br><span class="line">├── avatar.jpg</span><br><span class="line">├── db.json</span><br><span class="line">├── debug.log</span><br><span class="line">├── node_modules</span><br><span class="line">├── public	     //执行hexo g命令后，生成的内容会在这里，包括所有的文章、页面、分类、tag等.</span><br><span class="line">├── scaffolds    //保存着默认模板，自定义模板就是修改该目录下的文件</span><br><span class="line">│   ├── draft.md //默认的草稿模板</span><br><span class="line">│   ├── page.md  //默认的页面模板</span><br><span class="line">│   └── post.md  //默认的文章模板</span><br><span class="line">├── source 		 //Hexo存放编辑页面的地方，可以使用vim或其他编辑器编辑这里的内容</span><br><span class="line">│   ├── 404.html //自定义404页面，可以使用腾讯公益404页面</span><br><span class="line">│   ├── Staticfile 				</span><br><span class="line">│   ├── _drafts  //存放所有的草稿文件的目录</span><br><span class="line">│   ├── _posts	 //存放所有的文章文件的目录，用的最多，比如执行hexo n &quot;post_name&quot;之后，post_name这篇文章就存放在这个目录下</span><br><span class="line">│   ├── categories</span><br><span class="line">└── themes		 //Hexo的所有主题</span><br><span class="line">    ├── landscape //原始hexo主题</span><br><span class="line">    ├── next     //这是我目前用的主题</span><br></pre></td></tr></table></figure>
+<p>#0x1 在博客的scaffolds目录下有三个md文档，只需要改post.md即可。<br><img src="/images/9.png" alt="图片"></p>
+<h2 id="2-3-文章置顶"><a href="#2-3-文章置顶" class="headerlink" title="2.3 文章置顶"></a>2.3 文章置顶</h2><p>#0x0 在title下面设置top：true</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<p>#0x1 如果你置顶了多篇，怎么控制顺序呢？设置top的值（大的在前面），比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Post a.md</span><br><span class="line">title: a</span><br><span class="line">top: 1</span><br><span class="line"></span><br><span class="line"># Post b.md</span><br><span class="line">title: b</span><br><span class="line">top: 10</span><br></pre></td></tr></table></figure>
+<p>#0x2 设置置顶图标<br>打开&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig文件，在<div class="post-meta">下方，插入如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-          
-          <category> 硬件 </category>
-          
+        <category>博客</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音频接口</title>
-      <link href="/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/"/>
-      <url>/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/</url>
-      
-        <content type="html"><![CDATA[<h1 id="三色音频接口"><a href="#三色音频接口" class="headerlink" title="三色音频接口"></a>三色音频接口</h1><p>Line Out：一个插耳机（或音箱）是绿色的；</p><p>MIC：一个插话筒（麦克风）是红色的；</p><p>Line In：一个线路输入（一般用不着）是蓝色的。 比如想把以前磁带或收音机里的声音转录到电脑里，就可以用这个孔</p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>网口速率灯</title>
+    <url>/2024/11/27/%E7%BD%91%E5%8F%A3%E9%80%9F%E7%8E%87%E7%81%AF/</url>
+    <content><![CDATA[<p>左为状态指示灯，右为速度指示灯</p>
+<span id="more"></span>
+<p><img src="/images/1.png" alt="图片"></p>
+]]></content>
       <categories>
-          
-          <category> 硬件 </category>
-          
+        <category>硬件</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网口速率灯</title>
-      <link href="/2024/11/27/%E7%BD%91%E5%8F%A3%E9%80%9F%E7%8E%87%E7%81%AF/"/>
-      <url>/2024/11/27/%E7%BD%91%E5%8F%A3%E9%80%9F%E7%8E%87%E7%81%AF/</url>
-      
-        <content type="html"><![CDATA[<p>左为状态指示灯，右为速度指示灯</p><p><img src="/images/1.png" alt="图片"></p>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>安装新系统跳过网络连接</title>
+    <url>/2024/12/04/%E5%AE%89%E8%A3%85%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%B7%B3%E8%BF%87%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</url>
+    <content><![CDATA[<p>安装新系统时，遇到必须连接网络，否则无法下一步，敲快捷指令Shift+F10，调出如下图的界面，然后输入oobe\bypassnro即可跳过</p>
+<span id="more"></span>
+<p><img src="/images/5.jpg" alt="图1"></p>
+]]></content>
       <categories>
-          
-          <category> 硬件 </category>
-          
+        <category>系统</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客相关</title>
-      <link href="/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
-      <url>/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、写作和发布"><a href="#一、写作和发布" class="headerlink" title="一、写作和发布"></a>一、写作和发布</h1><p>1.1 创建一篇新文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章名称</span><br></pre></td></tr></table></figure><p>1.2 本地启动</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>1.3 上传git</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><h1 id="二、cactus博客主题设置"><a href="#二、cactus博客主题设置" class="headerlink" title="二、cactus博客主题设置"></a>二、cactus博客主题设置</h1>]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>音频接口</title>
+    <url>/2024/11/28/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<h1 id="三色音频接口"><a href="#三色音频接口" class="headerlink" title="三色音频接口"></a>三色音频接口</h1><p>Line Out：一个插耳机（或音箱）是绿色的；</p>
+<p>MIC：一个插话筒（麦克风）是红色的；</p>
+<p>Line In：一个线路输入（一般用不着）是蓝色的。 比如想把以前磁带或收音机里的声音转录到电脑里，就可以用这个孔</p>
+]]></content>
       <categories>
-          
-          <category> 博客 </category>
-          
+        <category>硬件</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-  
-  
+  </entry>
+  <entry>
+    <title>健身</title>
+    <url>/2025/02/19/%E5%81%A5%E8%BA%AB/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>健身</category>
+      </categories>
+      <tags>
+        <tag>健身</tag>
+      </tags>
+  </entry>
 </search>

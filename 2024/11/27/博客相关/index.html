@@ -17,20 +17,24 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、写作和发布1.1 创建一篇新文章 1hexo new post 文章名称 1.2 本地启动 1hexo g -d 1hexo s 1.3 上传git 1hexo d 二、cactus博客主题设置">
+  <meta name="description" content="一、写作和发布1.1 创建一篇新文章1hexo new post 文章名称 1.2 本地启动1hexo g 1hexo s 1.3 上传git1hexo d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客相关">
 <meta property="og:url" content="http://example.com/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、写作和发布1.1 创建一篇新文章 1hexo new post 文章名称 1.2 本地启动 1hexo g -d 1hexo s 1.3 上传git 1hexo d 二、cactus博客主题设置">
+<meta property="og:description" content="一、写作和发布1.1 创建一篇新文章1hexo new post 文章名称 1.2 本地启动1hexo g 1hexo s 1.3 上传git1hexo d">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/7.png">
+<meta property="og:image" content="http://example.com/images/8.png">
+<meta property="og:image" content="http://example.com/images/9.png">
 <meta property="article:published_time" content="2024-11-27T06:08:43.000Z">
-<meta property="article:modified_time" content="2025-01-15T09:47:46.584Z">
+<meta property="article:modified_time" content="2025-02-19T08:28:02.688Z">
 <meta property="article:author" content="zxy">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/7.png">
 
 <link rel="canonical" href="http://example.com/2024/11/27/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/">
 
@@ -103,6 +107,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -117,26 +122,53 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-tags">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -177,6 +209,8 @@
         </h1>
 
         <div class="post-meta">
+        
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -190,7 +224,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-15 17:47:46" itemprop="dateModified" datetime="2025-01-15T17:47:46+08:00">2025-01-15</time>
+                <time title="修改时间：2025-02-19 16:28:02" itemprop="dateModified" datetime="2025-02-19T16:28:02+08:00">2025-02-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -213,14 +247,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="一、写作和发布"><a href="#一、写作和发布" class="headerlink" title="一、写作和发布"></a>一、写作和发布</h1><p>1.1 创建一篇新文章</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章名称</span><br></pre></td></tr></table></figure>
-<p>1.2 本地启动</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+        <h1 id="一、写作和发布"><a href="#一、写作和发布" class="headerlink" title="一、写作和发布"></a>一、写作和发布</h1><h2 id="1-1-创建一篇新文章"><a href="#1-1-创建一篇新文章" class="headerlink" title="1.1 创建一篇新文章"></a>1.1 创建一篇新文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章名称</span><br></pre></td></tr></table></figure>
+<h2 id="1-2-本地启动"><a href="#1-2-本地启动" class="headerlink" title="1.2 本地启动"></a>1.2 本地启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>1.3 上传git</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h1 id="二、cactus博客主题设置"><a href="#二、cactus博客主题设置" class="headerlink" title="二、cactus博客主题设置"></a>二、cactus博客主题设置</h1>
+<h2 id="1-3-上传git"><a href="#1-3-上传git" class="headerlink" title="1.3 上传git"></a>1.3 上传git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h1 id="二、next博客主题设置"><a href="#二、next博客主题设置" class="headerlink" title="二、next博客主题设置"></a>二、next博客主题设置</h1><h2 id="2-1-添加搜索功能"><a href="#2-1-添加搜索功能" class="headerlink" title="2.1 添加搜索功能"></a>2.1 添加搜索功能</h2><p>#0x0.在根目录下打开git bash 并输入如下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+<p>#0x1 主题 的 _config 配置文件中找到 local_search，下面的 enable输入true即可。<br><img src="/images/7.png" alt="图片"><br>#0x2 在根目录的 _config.yml 文件中 的末尾添加下面的内容：（选项的内容可以适当修改）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># hexo-generator-searchdb</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10</span><br></pre></td></tr></table></figure>
+<h2 id="2-2-创建新菜单"><a href="#2-2-创建新菜单" class="headerlink" title="2.2 创建新菜单"></a>2.2 创建新菜单</h2><p>#0x0 打开 themes 的 next 的 _config.yml ，我们此时打开的是主题的配置文件，不是根目录的。搜索menu，即可看到：这里其实就是我们的博客菜单选项。<br><img src="/images/8.png" alt="图片"><br>#0x1 首先在 blog的根目录中打开 git bash黑窗口，输入以下的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags  # tags可以是其他的</span><br></pre></td></tr></table></figure>
+<p>#0x2 然后在这个 _config 的menu中把 tags这一项取消注释，然后重新构建</p>
+<h2 id="2-2-新文章的模版"><a href="#2-2-新文章的模版" class="headerlink" title="2.2 新文章的模版"></a>2.2 新文章的模版</h2><p>#0x0 很多小伙伴给自己个博客添加了很多其他的功能，但是每次写文章的时候都需要在文章的开头去写一遍，这简直就是重复造轮子。其实，你可以自己在scaffolds中去修改属于你自己的模板。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">hexo-install-directory</span><br><span class="line">├── CNAME</span><br><span class="line">├── _config.yml  //Hexo的配置文件，可以配置主题、语言等</span><br><span class="line">├── avatar.jpg</span><br><span class="line">├── db.json</span><br><span class="line">├── debug.log</span><br><span class="line">├── node_modules</span><br><span class="line">├── public	     //执行hexo g命令后，生成的内容会在这里，包括所有的文章、页面、分类、tag等.</span><br><span class="line">├── scaffolds    //保存着默认模板，自定义模板就是修改该目录下的文件</span><br><span class="line">│   ├── draft.md //默认的草稿模板</span><br><span class="line">│   ├── page.md  //默认的页面模板</span><br><span class="line">│   └── post.md  //默认的文章模板</span><br><span class="line">├── source 		 //Hexo存放编辑页面的地方，可以使用vim或其他编辑器编辑这里的内容</span><br><span class="line">│   ├── 404.html //自定义404页面，可以使用腾讯公益404页面</span><br><span class="line">│   ├── Staticfile 				</span><br><span class="line">│   ├── _drafts  //存放所有的草稿文件的目录</span><br><span class="line">│   ├── _posts	 //存放所有的文章文件的目录，用的最多，比如执行hexo n &quot;post_name&quot;之后，post_name这篇文章就存放在这个目录下</span><br><span class="line">│   ├── categories</span><br><span class="line">└── themes		 //Hexo的所有主题</span><br><span class="line">    ├── landscape //原始hexo主题</span><br><span class="line">    ├── next     //这是我目前用的主题</span><br></pre></td></tr></table></figure>
+<p>#0x1 在博客的scaffolds目录下有三个md文档，只需要改post.md即可。<br><img src="/images/9.png" alt="图片"></p>
+<h2 id="2-3-文章置顶"><a href="#2-3-文章置顶" class="headerlink" title="2.3 文章置顶"></a>2.3 文章置顶</h2><p>#0x0 在title下面设置top：true</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<p>#0x1 如果你置顶了多篇，怎么控制顺序呢？设置top的值（大的在前面），比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Post a.md</span><br><span class="line">title: a</span><br><span class="line">top: 1</span><br><span class="line"></span><br><span class="line"># Post b.md</span><br><span class="line">title: b</span><br><span class="line">top: 10</span><br></pre></td></tr></table></figure>
+<p>#0x2 设置置顶图标<br>打开&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig文件，在<div class="post-meta">下方，插入如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -297,7 +344,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%86%99%E4%BD%9C%E5%92%8C%E5%8F%91%E5%B8%83"><span class="nav-number">1.</span> <span class="nav-text">一、写作和发布</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81cactus%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">二、cactus博客主题设置</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%86%99%E4%BD%9C%E5%92%8C%E5%8F%91%E5%B8%83"><span class="nav-number">1.</span> <span class="nav-text">一、写作和发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E5%88%9B%E5%BB%BA%E4%B8%80%E7%AF%87%E6%96%B0%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 创建一篇新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 本地启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E4%B8%8A%E4%BC%A0git"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 上传git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81next%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">二、next博客主题设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 添加搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E5%88%9B%E5%BB%BA%E6%96%B0%E8%8F%9C%E5%8D%95"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 创建新菜单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%A8%A1%E7%89%88"><span class="nav-number">2.3.</span> <span class="nav-text">2.2 新文章的模版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="nav-number">2.4.</span> <span class="nav-text">2.3 文章置顶</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -309,17 +356,22 @@
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">12</span>
+          <a href="/archives">
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -388,6 +440,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
