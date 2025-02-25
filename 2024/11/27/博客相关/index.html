@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://example.com/images/8.png">
 <meta property="og:image" content="http://example.com/images/9.png">
 <meta property="article:published_time" content="2024-11-27T06:08:43.000Z">
-<meta property="article:modified_time" content="2025-02-19T08:28:02.688Z">
+<meta property="article:modified_time" content="2025-02-20T03:10:55.156Z">
 <meta property="article:author" content="zxy">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/7.png">
@@ -224,7 +224,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-02-19 16:28:02" itemprop="dateModified" datetime="2025-02-19T16:28:02+08:00">2025-02-19</time>
+                <time title="修改时间：2025-02-20 11:10:55" itemprop="dateModified" datetime="2025-02-20T11:10:55+08:00">2025-02-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,6 +268,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Post a.md</span><br><span class="line">title: a</span><br><span class="line">top: 1</span><br><span class="line"></span><br><span class="line"># Post b.md</span><br><span class="line">title: b</span><br><span class="line">top: 10</span><br></pre></td></tr></table></figure>
 <p>#0x2 设置置顶图标<br>打开&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig文件，在<div class="post-meta">下方，插入如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-部署到个人服务器"><a href="#2-4-部署到个人服务器" class="headerlink" title="2.4 部署到个人服务器"></a>2.4 部署到个人服务器</h2><p>参考博客：<a target="_blank" rel="noopener" href="https://www.hoi3vel.cn/2024/05/29/t-hexo-deploy/">https://www.hoi3vel.cn/2024/05/29/t-hexo-deploy/</a><br>踩坑点：<br>端口别忘了开</p>
+
     </div>
 
     
@@ -344,7 +347,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%86%99%E4%BD%9C%E5%92%8C%E5%8F%91%E5%B8%83"><span class="nav-number">1.</span> <span class="nav-text">一、写作和发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E5%88%9B%E5%BB%BA%E4%B8%80%E7%AF%87%E6%96%B0%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 创建一篇新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 本地启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E4%B8%8A%E4%BC%A0git"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 上传git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81next%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">二、next博客主题设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 添加搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E5%88%9B%E5%BB%BA%E6%96%B0%E8%8F%9C%E5%8D%95"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 创建新菜单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%A8%A1%E7%89%88"><span class="nav-number">2.3.</span> <span class="nav-text">2.2 新文章的模版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="nav-number">2.4.</span> <span class="nav-text">2.3 文章置顶</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%86%99%E4%BD%9C%E5%92%8C%E5%8F%91%E5%B8%83"><span class="nav-number">1.</span> <span class="nav-text">一、写作和发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E5%88%9B%E5%BB%BA%E4%B8%80%E7%AF%87%E6%96%B0%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 创建一篇新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 本地启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E4%B8%8A%E4%BC%A0git"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 上传git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81next%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">二、next博客主题设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 添加搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E5%88%9B%E5%BB%BA%E6%96%B0%E8%8F%9C%E5%8D%95"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 创建新菜单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%A8%A1%E7%89%88"><span class="nav-number">2.3.</span> <span class="nav-text">2.2 新文章的模版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="nav-number">2.4.</span> <span class="nav-text">2.3 文章置顶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">2.5.</span> <span class="nav-text">2.4 部署到个人服务器</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
