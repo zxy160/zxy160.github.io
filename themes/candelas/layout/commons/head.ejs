@@ -34,7 +34,8 @@ if (is_archive()){
     <%- css({href: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', integrity: 'sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=', crossorigin: 'anonymous'}) %>
   <% } %>
   <%- js({src: 'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js', integrity: 'sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', defer: true, crossorigin: 'anonymous'}) %>
-  <% if (!is_post() && !is_home() && !is_archive()){ %>
+  <% const isCategoriesPage = page && page.layout === 'categories'; %>
+  <% if (!is_post() && !is_home() && !is_archive() && !is_category() && !isCategoriesPage){ %>
     <%- js({src: 'js/cover.js', defer: true}) %>
   <% } %>
   <% if (is_post()){ %>
