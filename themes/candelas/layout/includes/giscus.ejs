@@ -1,0 +1,18 @@
+<div class="giscus"></div>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="<%= theme.giscus.repo %>"
+  data-repo-id="<%= theme.giscus.repoId %>"
+  data-category="<%= theme.giscus.category %>"
+  data-category-id="<%= theme.giscus.categoryId %>"
+  data-mapping="<%= theme.giscus.mapping || 'pathname' %>"
+  data-strict="<%= theme.giscus.strict == null ? '0' : theme.giscus.strict %>"
+  data-reactions-enabled="<%= theme.giscus.reactionsEnabled == null ? '1' : theme.giscus.reactionsEnabled %>"
+  data-emit-metadata="<%= theme.giscus.emitMetadata == null ? '0' : theme.giscus.emitMetadata %>"
+  data-input-position="<%= theme.giscus.inputPosition || 'bottom' %>"
+  data-theme="<%= theme.giscus.theme || 'preferred_color_scheme' %>"
+  data-lang="<%= theme.giscus.lang || config.language || 'en' %>"
+  data-loading="<%= theme.giscus.loading || 'lazy' %>"
+  crossorigin="anonymous"
+  async>
+</script>

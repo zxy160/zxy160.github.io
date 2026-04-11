@@ -4,8 +4,8 @@
   </section>
   <section class="post-main">
     <%- partial('commons/article', {post: page, index: false}) %>
-    <% if (theme.gitalk.enabled){ %>
-      <%- partial('includes/gitalk') %>
+    <% if (theme.giscus.enabled && theme.giscus.repo && theme.giscus.repoId && theme.giscus.category && theme.giscus.categoryId){ %>
+      <%- partial('includes/giscus') %>
     <% } %>
   </section>
   <section class="post-sidebar">
