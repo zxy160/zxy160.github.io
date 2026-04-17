@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo Article 1 validates the single left navigation tree.">
+  <title>Demo Article 1: Tree</title>
+  <link rel="stylesheet" href="/css/notes-layout.css">
+</head>
+<body class="notes-page">
+  <main class="notes-shell">
+    <aside class="notes-nav" data-notes-nav></aside>
+    <section class="notes-content">
+      <nav class="notes-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <span>Notes</span> / <span>Demo</span> / <span>Article 1</span>
+      </nav>
+      <article class="notes-article" data-notes-article>
+        <h1>Demo Article 1: Tree</h1>
+        <p>This demo page validates a single left navigation tree for article switching and section jumping.</p>
+
+        <h2>Overview</h2>
+        <p>The left tree keeps sibling articles and the current article headings in one structure, so readers do not have to split their attention between two navigation systems.</p>
+
+        <h3>Why One Tree</h3>
+        <p>The UEFI-style reading model works because article switching and in-page movement live in the same left rail instead of competing panels.</p>
+
+        <h2>Layout Boundary</h2>
+        <p>The content column stays focused on the article body while the left rail remains the primary document navigation.</p>
+
+        <h3>Fallback Rule</h3>
+        <p>If the manifest cannot load, the page should still present readable article content without collapsing the layout into an error state.</p>
+      </article>
+      <nav class="notes-prev-next" data-notes-prev-next></nav>
+    </section>
+  </main>
+
+  <script src="/js/notes-layout.js"></script>
+</body>
+</html>

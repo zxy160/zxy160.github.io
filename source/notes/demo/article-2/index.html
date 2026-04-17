@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo Article 2 validates hash highlighting and article pagination.">
+  <title>Demo Article 2: Hash</title>
+  <link rel="stylesheet" href="/css/notes-layout.css">
+</head>
+<body class="notes-page">
+  <main class="notes-shell">
+    <aside class="notes-nav" data-notes-nav></aside>
+    <section class="notes-content">
+      <nav class="notes-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <span>Notes</span> / <span>Demo</span> / <span>Article 2</span>
+      </nav>
+      <article class="notes-article" data-notes-article>
+        <h1>Demo Article 2: Hash</h1>
+        <p>This demo page validates hash highlighting and previous-next navigation across article pages.</p>
+
+        <h2>Article Switch</h2>
+        <p>When a reader moves between sibling notes pages, the active article entry should switch with the page and keep the left tree consistent.</p>
+
+        <h3>Hash Highlight</h3>
+        <p>When the URL points at a section anchor, the matching child item in the left tree should become the active location.</p>
+
+        <h2>Previous Next</h2>
+        <p>The footer navigation should follow manifest order so the notes set reads like a small document sequence instead of a blog timeline.</p>
+
+        <h3>Mobile Fallback</h3>
+        <p>On narrow screens the tree stacks above the article, but section targeting and previous-next links should remain readable and usable.</p>
+      </article>
+      <nav class="notes-prev-next" data-notes-prev-next></nav>
+    </section>
+  </main>
+
+  <script src="/js/notes-layout.js"></script>
+</body>
+</html>

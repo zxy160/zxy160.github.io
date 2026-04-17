@@ -1,0 +1,7 @@
+{
+  "title": "Demo Notes",
+  "articles": [
+    { "title": "Demo Article 1: Tree", "path": "/notes/demo/article-1/" },
+    { "title": "Demo Article 2: Hash", "path": "/notes/demo/article-2/" }
+  ]
+}
